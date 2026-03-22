@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Dynamo Studio - Premium Wedding & Event Management | Indore</title>
+    <meta name="description" content="Dynamo Studio — Indore's premier wedding planning and event management company since 2012. 850+ events, luxury weddings, corporate events, and more."/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ffb4ab",
+              "on-primary-container": "#501600",
+              "on-tertiary-container": "#3d2400",
+              "tertiary-fixed": "#ffddb6",
+              "surface-container-highest": "#353535",
+              "surface-variant": "#353535",
+              "tertiary-container": "#c68315",
+              "on-secondary": "#5a1b00",
+              "surface": "#131313",
+              "surface-container-high": "#2a2a2a",
+              "surface-container-lowest": "#0e0e0e",
+              "primary-fixed": "#ffdbcf",
+              "error-container": "#93000a",
+              "inverse-surface": "#e5e2e1",
+              "surface-container": "#20201f",
+              "primary": "#ffb59b",
+              "inverse-primary": "#aa3700",
+              "on-tertiary-fixed-variant": "#643f00",
+              "surface-container-low": "#1b1b1b",
+              "on-tertiary-fixed": "#2a1800",
+              "secondary": "#ffb59a",
+              "surface-bright": "#393939",
+              "on-secondary-container": "#ffab8b",
+              "secondary-container": "#8b2f00",
+              "on-error": "#690005",
+              "on-secondary-fixed-variant": "#802a00",
+              "surface-tint": "#ffb59b",
+              "background": "#131313",
+              "surface-dim": "#131313",
+              "secondary-fixed-dim": "#ffb59a",
+              "on-secondary-fixed": "#370d00",
+              "on-background": "#e5e2e1",
+              "tertiary": "#ffb95a",
+              "on-error-container": "#ffdad6",
+              "primary-fixed-dim": "#ffb59b",
+              "on-primary-fixed-variant": "#822800",
+              "on-primary-fixed": "#380d00",
+              "primary-container": "#ff5701",
+              "on-surface-variant": "#e5beb2",
+              "on-tertiary": "#462a00",
+              "outline": "#ab897e",
+              "inverse-on-surface": "#313030",
+              "secondary-fixed": "#ffdbce",
+              "on-surface": "#e5e2e1",
+              "outline-variant": "#5b4037",
+              "tertiary-fixed-dim": "#ffb95a",
+              "on-primary": "#5c1a00"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        * { font-family: 'Manrope', sans-serif; }
+        h1,h2,h3,h4,h5,h6,.font-headline { font-family: 'Epilogue', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .liquid-gradient {
+            background: linear-gradient(135deg, #ffb59b 0%, #ff5701 100%);
+        }
+        .glass-card {
+            background: rgba(53, 53, 53, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .text-glow {
+            text-shadow: 0 0 30px rgba(255, 87, 1, 0.3);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #131313; }
+        ::-webkit-scrollbar-thumb { background: #353535; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ff5701; }
+        .demo-banner {
+            background: linear-gradient(135deg, #ff5701 0%, #ffb59b 100%);
+            color: #380d00;
+            text-align: center;
+            padding: 8px 16px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white overflow-x-hidden">
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">⚠️ This is a Demo Website — For Demonstration Purposes Only, Showcasing Our Skills &amp; Expertise</div>
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-40 flex justify-between items-center px-6 md:px-8 py-4 w-full max-w-7xl mx-auto md:rounded-xl md:mt-6 bg-surface/80 dark:bg-[#131313]/80 backdrop-blur-xl shadow-[0_40px_40px_-10px_rgba(0,0,0,0.1)] border-b border-white/5 md:border-none" style="top:36px;">
+    <div class="text-xl font-black text-[#FF5701] tracking-tighter cursor-pointer leading-none" onclick="window.location.href='index.html'">
+        DYNAMO<br><span class="text-white/80 text-xs font-bold tracking-[0.25em] uppercase" style="font-family:'Manrope',sans-serif;">STUDIO</span>
+    </div>
+    
+    <nav class="hidden md:flex items-center gap-10 font-headline tracking-tight uppercase" style="font-family:'Epilogue',sans-serif;">
+        <a class="text-[#FF5701] font-bold border-b-2 border-[#FF5701] pb-1" href="index.html">Home</a>
+        <a class="text-white/70 hover:text-white transition-colors" href="portfolio.html">Portfolio</a>
+        <a class="text-white/70 hover:text-white transition-colors" href="services.html">Services</a>
+        <a class="text-white/70 hover:text-white transition-colors" href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="flex items-center gap-4">
+        <button onclick="window.location.href='contact.html'" class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform duration-300" style="font-family:'Manrope',sans-serif;">
+            Get Started
+        </button>
+        <button id="menu-open" class="md:hidden text-primary p-2 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</header>
+
+<!-- MOBILE SIDE MENU -->
+<div id="side-menu" class="fixed top-0 right-0 h-full w-full sm:w-1/3 bg-[#131313]/95 backdrop-blur-2xl z-50 transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-2xl border-l border-white/10 flex flex-col p-10 text-center sm:text-left">
+    <div class="flex justify-end mb-16">
+        <button id="menu-close" class="text-white/70 hover:text-[#FF5701] transition-colors focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+    </div>
+    <nav class="flex flex-col items-center sm:items-start gap-10 font-headline text-3xl font-black uppercase tracking-tighter" style="font-family:'Epilogue',sans-serif;">
+        <a class="text-[#FF5701] hover:translate-x-2 transition-transform" href="index.html">Home</a>
+        <a class="text-white hover:text-[#FF5701] hover:translate-x-2 transition-all" href="portfolio.html">Portfolio</a>
+        <a class="text-white hover:text-[#FF5701] hover:translate-x-2 transition-all" href="services.html">Services</a>
+        <a class="text-white hover:text-[#FF5701] hover:translate-x-2 transition-all" href="contact.html">Contact</a>
+    </nav>
+    <div class="mt-auto pt-10 border-t border-white/10">
+        <button onclick="window.location.href='contact.html'" class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:shadow-primary-container/20 transition-all" style="font-family:'Manrope',sans-serif;">
+            Book Now
+        </button>
+    </div>
+</div>
+
+<main style="padding-top:36px;">
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[1024px] flex flex-col justify-center items-center pt-40 md:pt-48 pb-20 md:pb-32 px-6 overflow-hidden">
+        <div class="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-primary-container/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-tertiary-container/10 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto text-center z-10 flex flex-col items-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-highest/30 backdrop-blur-md mb-8 border border-outline-variant/15">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                <span class="text-xs font-bold tracking-[0.2em] uppercase text-on-surface-variant" style="font-family:'Manrope',sans-serif;">Premium Wedding &amp; Event Design — Since 2012</span>
+            </div>
+            
+            <h1 class="font-headline text-5xl sm:text-6xl md:text-9xl font-black tracking-tighter mb-8 leading-[1.1] md:leading-[0.9] text-glow break-words w-full" style="font-family:'Epilogue',sans-serif;">
+                WE BRING YOUR<br class="hidden sm:block"/>
+                <span class="text-transparent bg-clip-text liquid-gradient">DREAM EVENTS</span><br class="hidden sm:block"/> TO LIFE.
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-on-surface-variant text-base md:text-xl leading-relaxed font-light mb-12 px-4 md:px-0" style="font-family:'Manrope',sans-serif;">
+                Dynamo Studio — Indore's most trusted event management company since 2012. Over 850 flawlessly executed weddings, corporate events, and celebrations across Central India.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full sm:w-auto">
+                <button onclick="window.location.href='contact.html'" class="w-full sm:w-auto px-10 py-4 md:py-5 bg-gradient-to-br from-primary to-primary-container rounded-full text-on-primary-fixed font-bold text-base md:text-lg shadow-2xl hover:shadow-primary-container/20 transition-all" style="font-family:'Manrope',sans-serif;">
+                    Plan Your Event
+                </button>
+                <button onclick="window.location.href='portfolio.html'" class="w-full sm:w-auto px-10 py-4 md:py-5 rounded-full glass-card border border-outline-variant/15 font-bold text-base md:text-lg hover:bg-surface-container transition-all" style="font-family:'Manrope',sans-serif;">
+                    View Portfolio
+                </button>
+            </div>
+        </div>
+
+        <div class="mt-16 md:mt-24 w-full max-w-6xl mx-auto relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-primary/30 to-tertiary/30 rounded-xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+            <div class="relative aspect-video rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/10">
+                <img alt="Dynamo Studio luxury wedding setup Indore" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop" width="2069" height="1163"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="py-10 px-6 bg-surface-container-lowest border-y border-outline-variant/10">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl md:text-5xl font-black font-headline text-primary" style="font-family:'Epilogue',sans-serif;">850+</div>
+                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold mt-2" style="font-family:'Manrope',sans-serif;">Events Covered</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-black font-headline text-primary" style="font-family:'Epilogue',sans-serif;">12+</div>
+                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold mt-2" style="font-family:'Manrope',sans-serif;">Years Experience</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-black font-headline text-primary" style="font-family:'Epilogue',sans-serif;">5+</div>
+                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold mt-2" style="font-family:'Manrope',sans-serif;">Cities Served</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-black font-headline text-primary" style="font-family:'Epilogue',sans-serif;">100%</div>
+                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold mt-2" style="font-family:'Manrope',sans-serif;">Client Satisfaction</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="py-20 md:py-32 px-6 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 md:mb-20 gap-6 md:gap-8 text-center md:text-left">
+                <div class="max-w-xl flex flex-col items-center md:items-start">
+                    <h2 class="font-headline text-xs md:text-sm font-bold tracking-[0.3em] uppercase text-primary mb-4" style="font-family:'Epilogue',sans-serif;">Our Services</h2>
+                    <h3 class="font-headline text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tighter leading-tight break-words" style="font-family:'Epilogue',sans-serif;">MOMENTS CRAFTED WITH PRECISION.</h3>
+                </div>
+                <div class="text-on-surface-variant text-base md:text-lg max-w-xs font-light leading-relaxed" style="font-family:'Manrope',sans-serif;">
+                    From intimate ceremonies to grand corporate galas — our in-house team handles every detail, flawlessly.
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-auto md:auto-rows-[300px]">
+                <div class="md:col-span-8 md:row-span-2 glass-card rounded-xl p-8 md:p-12 flex flex-col justify-end relative overflow-hidden group text-center md:text-left min-h-[300px] md:min-h-0" style="background-image:url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop');background-size:cover;background-position:center;">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-[#131313]/70 to-transparent"></div>
+                    <div class="absolute top-0 right-0 p-6 md:p-8">
+                        <span class="material-symbols-outlined text-5xl md:text-6xl text-primary/30 group-hover:text-primary/60 transition-colors">celebration</span>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center md:items-start">
+                        <h4 class="font-headline text-3xl md:text-4xl font-black mb-4 uppercase break-words w-full" style="font-family:'Epilogue',sans-serif;">Luxury Weddings</h4>
+                        <p class="text-on-surface-variant max-w-md text-base md:text-lg" style="font-family:'Manrope',sans-serif;">Full-service wedding planning — from thematic floral décor and sangeet choreography to cinematic photography and premium catering. We craft every moment with cultural grace.</p>
+                        <div class="mt-6 md:mt-8 flex gap-3 md:gap-4 flex-wrap justify-center md:justify-start">
+                            <span class="px-3 py-1 bg-surface-container text-xs font-bold rounded-md" style="font-family:'Manrope',sans-serif;">FLORAL DECOR</span>
+                            <span class="px-3 py-1 bg-surface-container text-xs font-bold rounded-md" style="font-family:'Manrope',sans-serif;">CHOREOGRAPHY</span>
+                            <span class="px-3 py-1 bg-surface-container text-xs font-bold rounded-md" style="font-family:'Manrope',sans-serif;">DRONE PHOTO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 md:row-span-1 bg-surface-container rounded-xl p-8 flex flex-col justify-between hover:bg-surface-container-high transition-colors text-center md:text-left items-center md:items-start min-h-[250px] md:min-h-0">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-4 md:mb-0">corporate_fare</span>
+                    <div>
+                        <h4 class="font-headline text-xl md:text-2xl font-bold mb-2 tracking-tight break-words w-full" style="font-family:'Epilogue',sans-serif;">CORPORATE EVENTS</h4>
+                        <p class="text-on-surface-variant text-sm" style="font-family:'Manrope',sans-serif;">Conferences, galas, and corporate meets handled with absolute professionalism. Your brand elevated.</p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 md:row-span-1 bg-primary-container rounded-xl p-8 flex flex-col justify-between text-on-primary-fixed text-center md:text-left items-center md:items-start min-h-[250px] md:min-h-0">
+                    <span class="material-symbols-outlined text-4xl mb-4 md:mb-0">theater_comedy</span>
+                    <div>
+                        <h4 class="font-headline text-xl md:text-2xl font-bold mb-2 tracking-tight break-words w-full" style="font-family:'Epilogue',sans-serif;">LIVE MUSIC &amp; DJ</h4>
+                        <p class="text-on-primary-fixed/80 text-sm" style="font-family:'Manrope',sans-serif;">Live bands, DJ setups, celebrity &amp; international artist management for unforgettable entertainment.</p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-12 md:row-span-1 bg-surface-container rounded-xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 group text-center md:text-left">
+                    <div class="max-w-lg flex flex-col items-center md:items-start">
+                        <h4 class="font-headline text-2xl md:text-3xl font-black mb-2 uppercase tracking-tighter break-words w-full" style="font-family:'Epilogue',sans-serif;">End-to-End Event Solutions</h4>
+                        <p class="text-on-surface-variant text-sm md:text-base" style="font-family:'Manrope',sans-serif;">Birthdays, anniversaries, baby showers, college events &amp; more — we manage everything from venue booking to custom decorations and digital invitations.</p>
+                    </div>
+                    <button onclick="window.location.href='services.html'" class="w-full md:w-auto px-8 py-4 border border-outline-variant/30 rounded-full group-hover:bg-primary group-hover:text-on-primary-fixed transition-all duration-300 font-bold uppercase tracking-widest text-xs whitespace-nowrap" style="font-family:'Manrope',sans-serif;">
+                        View All Services
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="py-20 md:py-32 px-6 bg-surface overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-headline text-sm font-bold tracking-[0.3em] uppercase text-primary mb-16 md:mb-20 text-center" style="font-family:'Epilogue',sans-serif;">Selected Portfolio</h2>
+            
+            <div class="flex flex-col gap-24 md:gap-32">
+                <!-- Portfolio 01 -->
+                <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+                    <div class="w-full md:w-1/2 relative">
+                        <div class="absolute -top-6 -left-6 md:-top-12 md:-left-12 text-[8rem] md:text-[12rem] font-black text-white/5 font-headline leading-none select-none z-0" style="font-family:'Epilogue',sans-serif;">01</div>
+                        <div class="aspect-[4/5] rounded-xl overflow-hidden glass-card p-2 border border-outline-variant/10 relative z-10">
+                            <img alt="Dynamo Studio grand wedding celebration Indore" class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop" width="2070" height="2587"/>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left mt-4 md:mt-0">
+                        <span class="text-primary font-bold tracking-[0.2em] uppercase text-xs" style="font-family:'Manrope',sans-serif;">Wedding Showcase — Indore</span>
+                        <h3 class="font-headline text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter mt-4 md:mt-6 mb-6 md:mb-8 uppercase leading-[1.1] md:leading-none break-words w-full" style="font-family:'Epilogue',sans-serif;">THE <br class="hidden md:block"/> ROYAL <br class="hidden md:block"/> CEREMONY</h3>
+                        <p class="text-on-surface-variant text-base md:text-xl font-light leading-relaxed mb-8 md:mb-10 px-2 md:px-0" style="font-family:'Manrope',sans-serif;">
+                            A complete luxury wedding execution in Indore — our signature cinematic grand entry, custom floral décor, professional sangeet choreography, and elite premium catering all in one seamless event.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 md:gap-8 border-t border-outline-variant/20 pt-8 w-full">
+                            <div>
+                                <div class="text-2xl font-black font-headline" style="font-family:'Epilogue',sans-serif;">850+</div>
+                                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold mt-1" style="font-family:'Manrope',sans-serif;">Events Delivered</div>
+                            </div>
+                            <div class="hidden sm:block w-px h-8 bg-outline-variant/30"></div>
+                            <div>
+                                <div class="text-2xl font-black font-headline" style="font-family:'Epilogue',sans-serif;">100%</div>
+                                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold mt-1" style="font-family:'Manrope',sans-serif;">Client Satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio 02 -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16">
+                    <div class="w-full md:w-1/2 relative">
+                        <div class="absolute -top-6 -right-6 md:-top-12 md:-right-12 text-[8rem] md:text-[12rem] font-black text-white/5 font-headline leading-none select-none z-0" style="font-family:'Epilogue',sans-serif;">02</div>
+                        <div class="aspect-[4/5] rounded-xl overflow-hidden glass-card p-2 border border-outline-variant/10 relative z-10">
+                            <img alt="Dynamo Studio corporate conference event management" class="w-full h-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop" width="2012" height="2515"/>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left mt-4 md:mt-0">
+                        <span class="text-primary font-bold tracking-[0.2em] uppercase text-xs" style="font-family:'Manrope',sans-serif;">Corporate Event — Bhopal &amp; Pune</span>
+                        <h3 class="font-headline text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter mt-4 md:mt-6 mb-6 md:mb-8 uppercase leading-[1.1] md:leading-none break-words w-full" style="font-family:'Epilogue',sans-serif;">ELITE <br class="hidden md:block"/> CORPORATE <br class="hidden md:block"/> SUMMIT</h3>
+                        <p class="text-on-surface-variant text-base md:text-xl font-light leading-relaxed mb-8 md:mb-10 px-2 md:px-0" style="font-family:'Manrope',sans-serif;">
+                            High-impact corporate conferences and galas delivered across Central India. From stage setup and live artist management to premium catering and full AV — Dynamo Studio handles it all.
+                        </p>
+                        <button onclick="window.location.href='portfolio.html'" class="group flex items-center justify-center md:justify-start gap-4 text-on-surface font-bold uppercase tracking-widest text-xs w-full md:w-auto" style="font-family:'Manrope',sans-serif;">
+                            <span class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </span>
+                            View Full Gallery
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 md:py-24 px-6 bg-surface-container-low border-y border-outline-variant/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="font-headline text-sm font-bold tracking-[0.3em] uppercase text-primary mb-4" style="font-family:'Epilogue',sans-serif;">Client Voices</h2>
+                <h3 class="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter break-words" style="font-family:'Epilogue',sans-serif;">TRUSTED ACROSS CENTRAL INDIA</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl border border-outline-variant/10 relative hover:-translate-y-2 transition-transform duration-300 flex flex-col items-center md:items-start text-center md:text-left">
+                    <span class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl hidden md:block">format_quote</span>
+                    <div class="flex items-center gap-1 text-tertiary mb-6">
+                        <span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm mb-8 leading-relaxed break-words w-full" style="font-family:'Manrope',sans-serif;">"Aman did an amazing job organizing my live music performance on December 31st in Pune. Everything was handled professionally and clearly. Even when there was an unexpected issue with sound equipment transport, he coordinated a local backup and made sure the show happened perfectly."</p>
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-white tracking-wide" style="font-family:'Manrope',sans-serif;">Sameer K.</h4>
+                        <p class="text-primary text-xs uppercase tracking-widest mt-1" style="font-family:'Manrope',sans-serif;">Live Music Performance, Pune</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl border border-outline-variant/10 relative hover:-translate-y-2 transition-transform duration-300 flex flex-col items-center md:items-start text-center md:text-left">
+                    <span class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl hidden md:block">format_quote</span>
+                    <div class="flex items-center gap-1 text-tertiary mb-6">
+                        <span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm mb-8 leading-relaxed break-words w-full" style="font-family:'Manrope',sans-serif;">"One of the best event management companies in Central India! Reliable, dependable, and highly trustworthy. Aman is a gem of a person who built this fantastic brand through sheer hard work and commitment. They handled my sister's wedding flawlessly. Wishing Dynamo Studio all the best!"</p>
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-white tracking-wide" style="font-family:'Manrope',sans-serif;">Priya Sharma</h4>
+                        <p class="text-primary text-xs uppercase tracking-widest mt-1" style="font-family:'Manrope',sans-serif;">Wedding Client, Indore</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl border border-outline-variant/10 relative hover:-translate-y-2 transition-transform duration-300 flex flex-col items-center md:items-start text-center md:text-left">
+                    <span class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl hidden md:block">format_quote</span>
+                    <div class="flex items-center gap-1 text-tertiary mb-6">
+                        <span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span>
+                    </div>
+                    <p class="text-on-surface-variant text-sm mb-8 leading-relaxed break-words w-full" style="font-family:'Manrope',sans-serif;">"Dynamo Studio is very disciplined and caters completely to customer satisfaction. They are dedicated professionals in the field of luxury event planning. I never had to worry about a single detail on the day of our corporate conference. Looking forward to more business with Aman and his team."</p>
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-white tracking-wide" style="font-family:'Manrope',sans-serif;">Amit Patel</h4>
+                        <p class="text-primary text-xs uppercase tracking-widest mt-1" style="font-family:'Manrope',sans-serif;">Corporate Conference Client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-16 md:py-20 px-4 md:px-6">
+        <div class="max-w-7xl mx-auto rounded-[2rem] md:rounded-[3rem] liquid-gradient p-8 md:p-24 relative overflow-hidden text-center">
+            <div class="absolute inset-0 bg-black/10 backdrop-blur-[2px]"></div>
+            <div class="relative z-10 flex flex-col items-center">
+                <h2 class="font-headline text-4xl sm:text-5xl md:text-8xl font-black tracking-tighter text-on-primary-fixed mb-6 md:mb-8 leading-none break-words w-full" style="font-family:'Epilogue',sans-serif;">READY TO <br class="hidden md:block"/> CELEBRATE?</h2>
+                <p class="text-on-primary-fixed/80 text-base md:text-xl max-w-xl mx-auto mb-10 md:mb-12 font-medium px-2 md:px-0" style="font-family:'Manrope',sans-serif;">
+                    Let's plan your dream event together. Dynamo Studio — Indore's most trusted name since 2012. Call Ravi at +91-8103756862 to begin.
+                </p>
+                <button onclick="window.location.href='contact.html'" class="w-full sm:w-auto px-10 py-5 md:px-12 md:py-6 bg-surface text-on-surface rounded-full font-black uppercase tracking-[0.1em] md:tracking-[0.2em] text-xs md:text-sm hover:scale-105 transition-transform shadow-2xl" style="font-family:'Manrope',sans-serif;">
+                    Start Your Journey
+                </button>
+            </div>
+            <div class="absolute -bottom-20 -right-20 w-60 h-60 md:w-80 md:h-80 bg-white/20 rounded-full blur-3xl"></div>
+            <div class="absolute -top-20 -left-20 w-48 h-48 md:w-64 md:h-64 bg-black/10 rounded-full blur-3xl"></div>
+        </div>
+    </section>
+
+    <div class="w-full flex justify-center pb-16 md:pb-20 bg-surface px-6">
+        <a href="contact.html" class="w-full sm:w-auto group relative inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 font-headline font-black text-white uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs md:text-sm overflow-hidden rounded-full liquid-gradient shadow-[0_0_30px_rgba(255,87,1,0.3)] hover:shadow-[0_0_50px_rgba(255,87,1,0.5)] transition-all duration-300 hover:scale-105" style="font-family:'Epilogue',sans-serif;">
+            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
+            <span class="relative flex items-center gap-2 md:gap-3 whitespace-nowrap">
+                Book Consultation <span class="material-symbols-outlined text-lg md:text-xl">arrow_forward</span>
+            </span>
+        </a>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="w-full bg-[#1b1b1b] pt-16 pb-10 px-6 md:px-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <!-- Brand Column -->
+        <div>
+            <div class="text-xl font-black text-[#FF5701] tracking-tighter mb-1 cursor-pointer leading-none" onclick="window.location.href='index.html'" style="font-family:'Epilogue',sans-serif;">
+                DYNAMO<br><span class="text-white/70 text-xs font-bold tracking-[0.25em] uppercase" style="font-family:'Manrope',sans-serif;">STUDIO</span>
+            </div>
+            <p class="text-white/50 text-sm mt-4 leading-relaxed" style="font-family:'Manrope',sans-serif;">
+                "We Bring Your Dream Events to Life, Flawlessly."<br><br>
+                Indore's premier wedding planning &amp; event management studio since 2012. 850+ events across Central India.
+            </p>
+            <p class="text-white/30 text-xs mt-4 italic" style="font-family:'Manrope',sans-serif;">⚠️ Demo website — for demonstration purposes only.</p>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div>
+            <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6" style="font-family:'Manrope',sans-serif;">Quick Links</h4>
+            <div class="flex flex-col gap-3">
+                <a href="index.html" class="text-white/50 hover:text-primary transition-colors text-sm" style="font-family:'Manrope',sans-serif;">Home</a>
+                <a href="portfolio.html" class="text-white/50 hover:text-primary transition-colors text-sm" style="font-family:'Manrope',sans-serif;">Portfolio</a>
+                <a href="services.html" class="text-white/50 hover:text-primary transition-colors text-sm" style="font-family:'Manrope',sans-serif;">Services</a>
+                <a href="contact.html" class="text-white/50 hover:text-primary transition-colors text-sm" style="font-family:'Manrope',sans-serif;">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Contact Column -->
+        <div>
+            <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6" style="font-family:'Manrope',sans-serif;">Contact</h4>
+            <div class="flex flex-col gap-3 text-sm text-white/50" style="font-family:'Manrope',sans-serif;">
+                <div class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span>
+                    <span>42, Block C, Vijay Nagar,<br>Indore, Madhya Pradesh 452010</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">call</span>
+                    <a href="tel:+918103756862" class="hover:text-primary transition-colors">+91-8103756862 (Ravi)</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">schedule</span>
+                    <span>Mon–Sun: 10:00 AM – 9:30 PM</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">place</span>
+                    <span>Indore · Bhopal · Ujjain · Pune &amp; more</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="w-full max-w-7xl mx-auto border-t border-white/5 pt-8 text-center px-4">
+        <span class="text-white/30 text-[10px] md:text-xs font-bold tracking-widest uppercase block break-words" style="font-family:'Manrope',sans-serif;">© 2026 DYNAMO STUDIO EVENT MANAGEMENT, INDORE. ALL RIGHTS RESERVED.</span>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/918103756862" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp"
+   style="position:fixed;bottom:28px;right:28px;z-index:999;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);transition:transform 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuOpenBtn = document.getElementById('menu-open');
+        const menuCloseBtn = document.getElementById('menu-close');
+        const sideMenu = document.getElementById('side-menu');
+
+        menuOpenBtn.addEventListener('click', () => {
+            sideMenu.classList.remove('translate-x-full');
+        });
+
+        menuCloseBtn.addEventListener('click', () => {
+            sideMenu.classList.add('translate-x-full');
+        });
+
+        // Close menu on outside click
+        sideMenu.addEventListener('click', (e) => {
+            if (e.target === sideMenu) {
+                sideMenu.classList.add('translate-x-full');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

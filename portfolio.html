@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Portfolio | Dynamo Studio — Wedding & Event Management Indore</title>
+    <meta name="description" content="Explore Dynamo Studio's portfolio of 850+ luxury weddings, corporate events, and celebrations across Indore, Bhopal, Ujjain, and Pune since 2012."/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ffb4ab", "on-primary-container": "#501600", "on-tertiary-container": "#3d2400",
+              "tertiary-fixed": "#ffddb6", "surface-container-highest": "#353535", "surface-variant": "#353535",
+              "tertiary-container": "#c68315", "on-secondary": "#5a1b00", "surface": "#131313",
+              "surface-container-high": "#2a2a2a", "surface-container-lowest": "#0e0e0e",
+              "primary-fixed": "#ffdbcf", "error-container": "#93000a", "inverse-surface": "#e5e2e1",
+              "surface-container": "#20201f", "primary": "#ffb59b", "inverse-primary": "#aa3700",
+              "on-tertiary-fixed-variant": "#643f00", "surface-container-low": "#1b1b1b",
+              "on-tertiary-fixed": "#2a1800", "secondary": "#ffb59a", "surface-bright": "#393939",
+              "on-secondary-container": "#ffab8b", "secondary-container": "#8b2f00", "on-error": "#690005",
+              "on-secondary-fixed-variant": "#802a00", "surface-tint": "#ffb59b", "background": "#131313",
+              "surface-dim": "#131313", "secondary-fixed-dim": "#ffb59a", "on-secondary-fixed": "#370d00",
+              "on-background": "#e5e2e1", "tertiary": "#ffb95a", "on-error-container": "#ffdad6",
+              "primary-fixed-dim": "#ffb59b", "on-primary-fixed-variant": "#822800", "on-primary-fixed": "#380d00",
+              "primary-container": "#ff5701", "on-surface-variant": "#e5beb2", "on-tertiary": "#462a00",
+              "outline": "#ab897e", "inverse-on-surface": "#313030", "secondary-fixed": "#ffdbce",
+              "on-surface": "#e5e2e1", "outline-variant": "#5b4037", "tertiary-fixed-dim": "#ffb95a",
+              "on-primary": "#5c1a00"
+            },
+            fontFamily: { "headline": ["Epilogue"], "body": ["Manrope"], "label": ["Manrope"] },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        * { font-family: 'Manrope', sans-serif; }
+        h1,h2,h3,h4,h5,h6,.font-headline { font-family: 'Epilogue', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .liquid-glass { background: rgba(27,27,27,0.5); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .glass-card { background: rgba(53,53,53,0.35); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .text-gradient { background: linear-gradient(135deg,#ffb59b 0%,#ff5701 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .liquid-gradient { background: linear-gradient(135deg,#ffb59b 0%,#ff5701 100%); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #131313; }
+        ::-webkit-scrollbar-thumb { background: #353535; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ff5701; }
+        .demo-banner { background: linear-gradient(135deg,#ff5701 0%,#ffb59b 100%); color: #380d00; text-align: center; padding: 8px 16px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-family: 'Manrope',sans-serif; }
+        .portfolio-card { transition: transform .4s ease, box-shadow .4s ease; }
+        .portfolio-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(255,87,1,0.15); }
+        .filter-btn { transition: all .3s ease; }
+        .filter-btn.active { background: linear-gradient(135deg,#ffb59b 0%,#ff5701 100%); color: #380d00; }
+        .portfolio-item { transition: opacity .4s ease, transform .4s ease; }
+        .portfolio-item.hidden-item { opacity: 0; pointer-events: none; position: absolute; }
+        @keyframes fadeInUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+        .fade-in-up { animation: fadeInUp .6s ease forwards; }
+        .img-zoom img { transition: transform .8s ease; }
+        .img-zoom:hover img { transform: scale(1.07); }
+        .stat-card { border-left: 3px solid #ff5701; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white overflow-x-hidden">
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">⚠️ This is a Demo Website — For Demonstration Purposes Only, Showcasing Our Skills &amp; Expertise</div>
+
+<!-- HEADER -->
+<header class="fixed left-0 right-0 z-40 flex justify-between items-center px-6 md:px-8 py-4 w-full max-w-7xl mx-auto md:rounded-xl md:mt-6 bg-surface/80 dark:bg-[#131313]/80 backdrop-blur-xl shadow-[0_40px_40px_-10px_rgba(0,0,0,0.1)] border-b border-white/5 md:border-none" style="top:36px;">
+    <div class="text-xl font-black text-[#FF5701] tracking-tighter cursor-pointer leading-none" onclick="window.location.href='index.html'" style="font-family:'Epilogue',sans-serif;">
+        DYNAMO<br><span class="text-white/80 text-xs font-bold tracking-[0.25em] uppercase" style="font-family:'Manrope',sans-serif;">STUDIO</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-10 tracking-tight uppercase" style="font-family:'Epilogue',sans-serif;">
+        <a class="text-white/70 hover:text-white transition-colors font-bold" href="index.html">Home</a>
+        <a class="text-[#FF5701] font-bold border-b-2 border-[#FF5701] pb-1" href="portfolio.html">Portfolio</a>
+        <a class="text-white/70 hover:text-white transition-colors font-bold" href="services.html">Services</a>
+        <a class="text-white/70 hover:text-white transition-colors font-bold" href="contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+        <button onclick="window.location.href='contact.html'" class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform duration-300">Get Started</button>
+        <button id="menu-open" class="md:hidden text-primary p-2 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="side-menu" class="fixed top-0 right-0 h-full w-full sm:w-1/3 bg-[#131313]/95 backdrop-blur-2xl z-50 transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-2xl border-l border-white/10 flex flex-col p-10 text-center sm:text-left">
+    <div class="flex justify-end mb-16">
+        <button id="menu-close" class="text-white/70 hover:text-[#FF5701] transition-colors focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+    </div>
+    <nav class="flex flex-col items-center sm:items-start gap-10 text-3xl font-black uppercase tracking-tighter" style="font-family:'Epilogue',sans-serif;">
+        <a class="text-white hover:text-[#FF5701] hover:translate-x-2 transition-all" href="index.html">Home</a>
+        <a class="text-[#FF5701] hover:translate-x-2 transition-transform" href="portfolio.html">Portfolio</a>
+        <a class="text-white hover:text-[#FF5701] hover:translate-x-2 transition-all" href="services.html">Services</a>
+        <a class="text-white hover:text-[#FF5701] hover:translate-x-2 transition-all" href="contact.html">Contact</a>
+    </nav>
+    <div class="mt-auto pt-10 border-t border-white/10">
+        <button onclick="window.location.href='contact.html'" class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm transition-all">Book Now</button>
+    </div>
+</div>
+
+<main style="padding-top: calc(36px + 7rem);">
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section class="px-6 md:px-12 max-w-7xl mx-auto mb-20 md:mb-28">
+        <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-4xl mx-auto md:mx-0">
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-highest/30 backdrop-blur-md mb-6 border border-outline-variant/15">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                <span class="text-xs font-bold tracking-[0.2em] uppercase text-on-surface-variant">850+ Events · Since 2012 · Indore</span>
+            </span>
+            <h1 class="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-[1.05] md:leading-none mb-6 break-words w-full" style="font-family:'Epilogue',sans-serif;">
+                OUR <br class="hidden sm:block"/><span class="text-gradient">WORK</span><br class="hidden sm:block"/> SPEAKS.
+            </h1>
+            <p class="text-on-surface-variant text-base md:text-xl max-w-2xl leading-relaxed opacity-80 px-4 md:px-0">
+                From grand royal weddings in Indore to high-energy corporate summits in Bhopal and Pune — every event in our portfolio is a story of precision, creativity, and flawless execution.
+            </p>
+        </div>
+    </section>
+
+    <!-- ── STATS STRIP ───────────────────────────────────── -->
+    <section class="px-6 md:px-12 max-w-7xl mx-auto mb-24">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            <div class="stat-card glass-card p-6 md:p-8 rounded-2xl">
+                <div class="text-4xl md:text-5xl font-black text-primary mb-2" style="font-family:'Epilogue',sans-serif;">850+</div>
+                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Events Delivered</div>
+            </div>
+            <div class="stat-card glass-card p-6 md:p-8 rounded-2xl">
+                <div class="text-4xl md:text-5xl font-black text-primary mb-2" style="font-family:'Epilogue',sans-serif;">12+</div>
+                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Years of Excellence</div>
+            </div>
+            <div class="stat-card glass-card p-6 md:p-8 rounded-2xl">
+                <div class="text-4xl md:text-5xl font-black text-primary mb-2" style="font-family:'Epilogue',sans-serif;">5+</div>
+                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Cities Covered</div>
+            </div>
+            <div class="stat-card glass-card p-6 md:p-8 rounded-2xl">
+                <div class="text-4xl md:text-5xl font-black text-primary mb-2" style="font-family:'Epilogue',sans-serif;">100%</div>
+                <div class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Client Satisfaction</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FEATURED SHOWCASE ─────────────────────────────── -->
+    <section class="px-6 md:px-12 max-w-7xl mx-auto mb-24 md:mb-32">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
+            <div>
+                <p class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-2">Featured Work</p>
+                <h2 class="text-3xl md:text-5xl font-black tracking-tighter" style="font-family:'Epilogue',sans-serif;">SIGNATURE EVENTS</h2>
+            </div>
+            <a href="contact.html" class="text-sm font-bold text-white/60 hover:text-primary transition-colors uppercase tracking-widest flex items-center gap-2">
+                Book Similar <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6">
+
+            <!-- CARD 1 – Large Wedding -->
+            <div class="md:col-span-8 group relative overflow-hidden rounded-2xl bg-surface-container-low h-[480px] md:h-[620px] border border-outline-variant/10 img-zoom portfolio-card">
+                <img alt="Dynamo Studio grand luxury wedding Indore" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-90 transition-all duration-700" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop" width="2070" height="1380"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-[#131313]/40 to-transparent z-10"></div>
+                <div class="absolute bottom-0 left-0 p-8 md:p-12 z-20 w-full text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-3 mb-4 flex-wrap">
+                        <span class="px-3 py-1 rounded-full bg-primary-container/25 text-primary text-[10px] uppercase font-bold tracking-widest backdrop-blur-md border border-primary/20">Luxury Wedding</span>
+                        <span class="text-white/50 text-[10px] uppercase font-bold tracking-widest">Indore, 2024</span>
+                    </div>
+                    <h3 class="text-3xl md:text-5xl font-black mb-3 tracking-tighter uppercase break-words" style="font-family:'Epilogue',sans-serif;">The Grand Royal<br/>Ceremony</h3>
+                    <p class="text-on-surface-variant/90 max-w-md mb-6 text-sm md:text-base mx-auto md:mx-0 leading-relaxed">Custom thematic floral décor, cinematic drone photography, sangeet choreography and a grand entry that left 800+ guests speechless.</p>
+                    <a class="inline-flex items-center justify-center md:justify-start gap-2 text-primary font-bold group/link text-sm" href="contact.html">
+                        BOOK A SIMILAR EVENT <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 2 – Corporate -->
+            <div class="md:col-span-4 group relative overflow-hidden rounded-2xl bg-surface-container-low h-[380px] md:h-[620px] border border-outline-variant/10 img-zoom portfolio-card">
+                <img alt="Dynamo Studio corporate conference Bhopal" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-all duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop" width="2012" height="1341"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent z-10"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-8 z-20 text-center md:text-left">
+                    <span class="text-xs font-bold tracking-[0.2em] text-primary mb-2">CORPORATE EVENT</span>
+                    <h3 class="text-2xl font-black mb-2 tracking-tight" style="font-family:'Epilogue',sans-serif;">Elite Corporate Summit</h3>
+                    <p class="text-on-surface-variant text-sm mb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 leading-relaxed">Professional conference management in Bhopal — full AV setup, live artist coordination, premium catering.</p>
+                    <button onclick="window.location.href='contact.html'" class="w-12 h-12 md:w-fit md:px-6 md:py-3 md:h-auto mx-auto md:mx-0 rounded-full bg-primary/20 backdrop-blur-md border border-primary/30 hover:bg-primary-container hover:border-transparent transition-all flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest">
+                        <span class="material-symbols-outlined text-white text-xl md:text-base">north_east</span>
+                        <span class="hidden md:inline text-white">Inquire</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 3 – Birthday -->
+            <div class="md:col-span-4 group relative overflow-hidden rounded-2xl bg-surface-container-low h-[320px] md:h-[400px] border border-outline-variant/10 img-zoom portfolio-card">
+                <img alt="Luxury birthday celebration Dynamo Studio" class="absolute inset-0 w-full h-full object-cover opacity-55 group-hover:opacity-80 transition-all duration-700" src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=2069&auto=format&fit=crop" width="2069" height="1379"/>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#131313]/90 to-transparent z-10"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-between z-20 text-center md:text-left">
+                    <span class="text-xs font-bold tracking-[0.2em] text-primary">BIRTHDAY CELEBRATION</span>
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-black mb-2 uppercase italic tracking-tighter" style="font-family:'Epilogue',sans-serif;">Grand Birthday Gala</h3>
+                        <p class="text-sm text-on-surface-variant line-clamp-2 leading-relaxed">Custom decor, live DJ, and full-service coordination for milestone birthday celebrations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 – Sangeet Night -->
+            <div class="md:col-span-4 group relative overflow-hidden rounded-2xl bg-surface-container-low h-[320px] md:h-[400px] border border-outline-variant/10 img-zoom portfolio-card">
+                <img alt="Sangeet night choreography Dynamo Studio" class="absolute inset-0 w-full h-full object-cover opacity-55 group-hover:opacity-80 transition-all duration-700" src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=2070&auto=format&fit=crop" width="2070" height="1380"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent z-10"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-between z-20 text-center md:text-left">
+                    <span class="text-xs font-bold tracking-[0.2em] text-primary">SANGEET &amp; PRE-WEDDING</span>
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-black mb-2 uppercase italic tracking-tighter" style="font-family:'Epilogue',sans-serif;">Sangeet Night Magic</h3>
+                        <p class="text-sm text-on-surface-variant line-clamp-2 leading-relaxed">Professional sangeet choreography, stage lighting, live band — an unforgettable pre-wedding night.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 – Floral / Decor -->
+            <div class="md:col-span-4 group relative overflow-hidden rounded-2xl bg-surface-container-low h-[320px] md:h-[400px] border border-outline-variant/10 img-zoom portfolio-card">
+                <img alt="Elite floral decoration Dynamo Studio Indore" class="absolute inset-0 w-full h-full object-cover opacity-55 group-hover:opacity-80 transition-all duration-700" src="https://images.unsplash.com/photo-1478146059778-26a9218e35f7?q=80&w=2070&auto=format&fit=crop" width="2070" height="1380"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent z-10"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-between z-20 text-center md:text-left">
+                    <span class="text-xs font-bold tracking-[0.2em] text-primary">FLORAL &amp; THEMATIC DECOR</span>
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-black mb-2 uppercase italic tracking-tighter" style="font-family:'Epilogue',sans-serif;">Elite Floral Designs</h3>
+                        <p class="text-sm text-on-surface-variant line-clamp-2 leading-relaxed">Bespoke floral installations and thematic décor concepts crafted by our in-house design team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FILTERABLE GALLERY ─────────────────────────────── -->
+    <section class="px-6 md:px-12 max-w-7xl mx-auto mb-24 md:mb-32">
+        <div class="text-center mb-12">
+            <p class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">Full Gallery</p>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tighter mb-8" style="font-family:'Epilogue',sans-serif;">BROWSE BY CATEGORY</h2>
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3" id="filter-bar">
+                <button class="filter-btn active px-5 py-2 rounded-full border border-outline-variant/30 text-xs font-bold uppercase tracking-widest" data-filter="all">All Events</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-outline-variant/30 text-xs font-bold uppercase tracking-widest text-white/60 hover:text-white" data-filter="wedding">Weddings</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-outline-variant/30 text-xs font-bold uppercase tracking-widest text-white/60 hover:text-white" data-filter="corporate">Corporate</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-outline-variant/30 text-xs font-bold uppercase tracking-widest text-white/60 hover:text-white" data-filter="social">Social Events</button>
+                <button class="filter-btn px-5 py-2 rounded-full border border-outline-variant/30 text-xs font-bold uppercase tracking-widest text-white/60 hover:text-white" data-filter="decor">Decor</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 relative" id="gallery-grid">
+
+            <!-- Wedding 1 -->
+            <div class="portfolio-item img-zoom rounded-2xl overflow-hidden border border-outline-variant/10 group relative h-[300px] md:h-[360px] portfolio-card" data-cat="wedding">
+                <img alt="Royal wedding reception Indore" class="w-full h-full object-cover opacity-70 group-hover:opacity-95 transition-all duration-700" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1600&auto=format&fit=crop" width="1600" height="1067"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 w-full">
+                    <span class="text-[10px] text-primary font-bold uppercase tracking-widest">Wedding · Indore</span>
+                    <h4 class="text-xl font-black tracking-tight mt-1" style="font-family:'Epilogue',sans-serif;">Royal Reception Night</h4>
+                </div>
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="contact.html" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-white text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Corporate 1 -->
+            <div class="portfolio-item img-zoom rounded-2xl overflow-hidden border border-outline-variant/10 group relative h-[300px] md:h-[360px] portfolio-card" data-cat="corporate">
+                <img alt="Corporate conference setup Bhopal" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1600&auto=format&fit=crop" width="1600" height="1067"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 w-full">
+                    <span class="text-[10px] text-primary font-bold uppercase tracking-widest">Corporate · Bhopal</span>
+                    <h4 class="text-xl font-black tracking-tight mt-1" style="font-family:'Epilogue',sans-serif;">Annual Corp. Summit</h4>
+                </div>
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="contact.html" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-white text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social 1 - Birthday -->
+            <div class="portfolio-item img-zoom rounded-2xl overflow-hidden border border-outline-variant/10 group relative h-[300px] md:h-[360px] portfolio-card" data-cat="social">
+                <img alt="Birthday party celebration Dynamo Studio" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700" src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=1600&auto=format&fit=crop" width="1600" height="1067"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 w-full">
+                    <span class="text-[10px] text-primary font-bold uppercase tracking-widest">Birthday · Indore</span>
+                    <h4 class="text-xl font-black tracking-tight mt-1" style="font-family:'Epilogue',sans-serif;">Milestone Birthday Bash</h4>
+                </div>
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="contact.html" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-white text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Wedding 2 – Sangeet -->
+            <div class="portfolio-item img-zoom rounded-2xl overflow-hidden border border-outline-variant/10 group relative h-[300px] md:h-[360px] portfolio-card" data-cat="wedding">
+                <img alt="Sangeet night Dynamo Studio" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700" src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1600&auto=format&fit=crop" width="1600" height="1067"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 w-full">
+                    <span class="text-[10px] text-primary font-bold uppercase tracking-widest">Sangeet · Ujjain</span>
+                    <h4 class="text-xl font-black tracking-tight mt-1" style="font-family:'Epilogue',sans-serif;">The Sangeet Spectacular</h4>
+                </div>
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="contact.html" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-white text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Decor 1 -->
+            <div class="portfolio-item img-zoom rounded-2xl overflow-hidden border border-outline-variant/10 group relative h-[300px] md:h-[360px] portfolio-card" data-cat="decor">
+                <img alt="Floral decoration Dynamo Studio Indore" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700" src="https://images.unsplash.com/photo-1478146059778-26a9218e35f7?q=80&w=1600&auto=format&fit=crop" width="1600" height="1067"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 w-full">
+                    <span class="text-[10px] text-primary font-bold uppercase tracking-widest">Floral Decor · Indore</span>
+                    <h4 class="text-xl font-black tracking-tight mt-1" style="font-family:'Epilogue',sans-serif;">Blossom Arch Installation</h4>
+                </div>
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="contact.html" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-white text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Corporate 2 - Live Music -->
+            <div class="portfolio-item img-zoom rounded-2xl overflow-hidden border border-outline-variant/10 group relative h-[300px] md:h-[360px] portfolio-card" data-cat="corporate">
+                <img alt="Live music performance corporate Dynamo Studio" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700" src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?q=80&w=1600&auto=format&fit=crop" width="1600" height="1067"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 w-full">
+                    <span class="text-[10px] text-primary font-bold uppercase tracking-widest">Live Music · Pune</span>
+                    <h4 class="text-xl font-black tracking-tight mt-1" style="font-family:'Epilogue',sans-serif;">New Year Live Concert</h4>
+                </div>
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="contact.html" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-white text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Wedding 3 -->
+            <div class="portfolio-item img-zoom rounded-2xl overflow-hidden border border-outline-variant/10 group relative h-[300px] md:h-[360px] portfolio-card" data-cat="wedding">
+                <img alt="Wedding venue setup Dynamo Studio" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1600&auto=format&fit=crop" width="1600" height="1067"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 w-full">
+                    <span class="text-[10px] text-primary font-bold uppercase tracking-widest">Wedding · Indore</span>
+                    <h4 class="text-xl font-black tracking-tight mt-1" style="font-family:'Epilogue',sans-serif;">Grand Venue Setup</h4>
+                </div>
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="contact.html" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-white text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social 2 - Anniversary -->
+            <div class="portfolio-item img-zoom rounded-2xl overflow-hidden border border-outline-variant/10 group relative h-[300px] md:h-[360px] portfolio-card" data-cat="social">
+                <img alt="Anniversary party celebration Dynamo Studio" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700" src="https://images.unsplash.com/photo-1470753937643-efeb931202a9?q=80&w=1600&auto=format&fit=crop" width="1600" height="1067"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 w-full">
+                    <span class="text-[10px] text-primary font-bold uppercase tracking-widest">Anniversary · Indore</span>
+                    <h4 class="text-xl font-black tracking-tight mt-1" style="font-family:'Epilogue',sans-serif;">Silver Anniversary Soirée</h4>
+                </div>
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="contact.html" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-white text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Decor 2 -->
+            <div class="portfolio-item img-zoom rounded-2xl overflow-hidden border border-outline-variant/10 group relative h-[300px] md:h-[360px] portfolio-card" data-cat="decor">
+                <img alt="Stage decoration and lighting Dynamo Studio" class="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700" src="https://images.unsplash.com/photo-1429514513361-8fa32282fd5f?q=80&w=1600&auto=format&fit=crop" width="1600" height="1067"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 w-full">
+                    <span class="text-[10px] text-primary font-bold uppercase tracking-widest">Stage Decor · Indore</span>
+                    <h4 class="text-xl font-black tracking-tight mt-1" style="font-family:'Epilogue',sans-serif;">Cinematic Stage Design</h4>
+                </div>
+                <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="contact.html" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-white text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── METHODOLOGY ───────────────────────────────────── -->
+    <section class="px-6 md:px-12 max-w-7xl mx-auto mb-24 md:mb-32">
+        <div class="flex flex-col md:flex-row items-center gap-14 md:gap-20">
+            <!-- Image -->
+            <div class="w-full md:w-1/2 relative">
+                <div class="absolute -top-10 -left-10 w-48 h-48 md:w-64 md:h-64 bg-primary-container/20 blur-[80px] md:blur-[100px] rounded-full pointer-events-none"></div>
+                <div class="bg-surface-container-high rounded-2xl p-1 overflow-hidden shadow-2xl img-zoom">
+                    <img alt="Dynamo Studio event preparation team Indore" class="w-full aspect-square md:aspect-[4/5] object-cover rounded-xl" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1400&auto=format&fit=crop" width="1400" height="1750"/>
+                </div>
+                <!-- Floating stat -->
+                <div class="absolute -bottom-6 -right-4 md:-bottom-8 md:-right-8 p-6 md:p-8 liquid-glass rounded-2xl border border-white/10 hidden sm:block shadow-xl">
+                    <span class="text-4xl md:text-5xl font-black text-primary-container" style="font-family:'Epilogue',sans-serif;">850+</span>
+                    <p class="text-[10px] md:text-xs font-bold tracking-widest uppercase mt-2 text-white/80">Events<br/>Delivered</p>
+                </div>
+            </div>
+
+            <!-- Text -->
+            <div class="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+                <span class="text-primary font-bold uppercase tracking-[0.3em] mb-4 text-xs block">The Dynamo Methodology</span>
+                <h2 class="text-4xl sm:text-5xl font-black tracking-tighter mb-10 leading-tight break-words" style="font-family:'Epilogue',sans-serif;">BEYOND THE<br class="hidden md:block"/> ORDINARY</h2>
+                <div class="space-y-10 md:space-y-12 text-left">
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 group items-center sm:items-start text-center sm:text-left">
+                        <span class="text-primary font-black text-2xl sm:text-3xl opacity-50 group-hover:opacity-100 transition-opacity flex-shrink-0" style="font-family:'Epilogue',sans-serif;">01</span>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2" style="font-family:'Epilogue',sans-serif;">Custom Creative Themes</h4>
+                            <p class="text-on-surface-variant opacity-80 leading-relaxed text-sm md:text-base">We don't use templates — every event gets a bespoke concept, thematic palette, and décor vision designed from scratch for your story.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 group items-center sm:items-start text-center sm:text-left">
+                        <span class="text-primary font-black text-2xl sm:text-3xl opacity-50 group-hover:opacity-100 transition-opacity flex-shrink-0" style="font-family:'Epilogue',sans-serif;">02</span>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2" style="font-family:'Epilogue',sans-serif;">In-House Expert Team</h4>
+                            <p class="text-on-surface-variant opacity-80 leading-relaxed text-sm md:text-base">Our full in-house team of decorators, coordinators, photographers, and choreographers ensures seamless transitions from planning to execution.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 group items-center sm:items-start text-center sm:text-left">
+                        <span class="text-primary font-black text-2xl sm:text-3xl opacity-50 group-hover:opacity-100 transition-opacity flex-shrink-0" style="font-family:'Epilogue',sans-serif;">03</span>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2" style="font-family:'Epilogue',sans-serif;">Stress-Free, End-to-End</h4>
+                            <p class="text-on-surface-variant opacity-80 leading-relaxed text-sm md:text-base">From the first call with Ravi to the last dance at your reception — Dynamo Studio handles every detail so you can simply celebrate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="services.html" class="px-8 py-4 bg-surface-container rounded-full font-bold uppercase tracking-widest text-xs hover:bg-surface-container-high transition-colors text-center">
+                        Our Services
+                    </a>
+                    <a href="contact.html" class="px-8 py-4 liquid-gradient text-on-primary-fixed rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform text-center">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── TESTIMONIALS STRIP ─────────────────────────────── -->
+    <section class="px-6 md:px-12 max-w-7xl mx-auto mb-24 md:mb-32">
+        <div class="text-center mb-12">
+            <p class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">Client Voices</p>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tighter" style="font-family:'Epilogue',sans-serif;">WHAT THEY SAY</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card p-8 rounded-2xl border border-outline-variant/10 hover:-translate-y-2 transition-transform duration-300 relative">
+                <span class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl hidden md:block">format_quote</span>
+                <div class="flex gap-1 text-tertiary mb-4">
+                    <span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span>
+                </div>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">"Aman coordinated my live music performance in Pune flawlessly. Even when there was an unexpected issue with sound transport, he arranged a local backup and ensured the show went perfectly."</p>
+                <div>
+                    <h4 class="font-bold text-white">Sameer K.</h4>
+                    <p class="text-primary text-xs uppercase tracking-widest mt-1">Live Music Performance, Pune</p>
+                </div>
+            </div>
+            <div class="glass-card p-8 rounded-2xl border border-outline-variant/10 hover:-translate-y-2 transition-transform duration-300 relative">
+                <span class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl hidden md:block">format_quote</span>
+                <div class="flex gap-1 text-tertiary mb-4">
+                    <span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span>
+                </div>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">"One of the best event management companies in Central India! Reliable and trustworthy. They handled my sister's wedding flawlessly. Wishing Dynamo Studio all the very best!"</p>
+                <div>
+                    <h4 class="font-bold text-white">Priya Sharma</h4>
+                    <p class="text-primary text-xs uppercase tracking-widest mt-1">Wedding Client, Indore</p>
+                </div>
+            </div>
+            <div class="glass-card p-8 rounded-2xl border border-outline-variant/10 hover:-translate-y-2 transition-transform duration-300 relative">
+                <span class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl hidden md:block">format_quote</span>
+                <div class="flex gap-1 text-tertiary mb-4">
+                    <span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span>
+                </div>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">"Disciplined, professional, and completely customer-focused. I never worried about a single detail at our corporate conference. Looking forward to more business with Dynamo Studio."</p>
+                <div>
+                    <h4 class="font-bold text-white">Amit Patel</h4>
+                    <p class="text-primary text-xs uppercase tracking-widest mt-1">Corporate Conference Client</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA BANNER ─────────────────────────────────────── -->
+    <section class="px-4 md:px-12 max-w-7xl mx-auto mb-10">
+        <div class="rounded-[2rem] md:rounded-[3rem] liquid-gradient p-10 md:p-24 relative overflow-hidden text-center shadow-2xl">
+            <div class="absolute inset-0 bg-black/10 backdrop-blur-[2px]"></div>
+            <div class="relative z-10 flex flex-col items-center">
+                <h2 class="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter text-on-primary-fixed mb-6 leading-none break-words w-full" style="font-family:'Epilogue',sans-serif;">READY TO CREATE<br class="hidden md:block"/> YOUR STORY?</h2>
+                <p class="text-on-primary-fixed/80 text-base md:text-xl max-w-xl mx-auto mb-10 font-medium px-2 md:px-0">
+                    Join 850+ happy clients across Central India. Call Ravi at +91-8103756862 and let's make your event unforgettable.
+                </p>
+                <button onclick="window.location.href='contact.html'" class="w-full sm:w-auto px-10 py-5 md:px-12 md:py-6 bg-surface text-on-surface rounded-full font-black uppercase tracking-[0.15em] text-xs md:text-sm hover:scale-105 transition-transform shadow-2xl">
+                    Start Planning Today
+                </button>
+            </div>
+            <div class="absolute -bottom-20 -right-20 w-64 h-64 md:w-80 md:h-80 bg-white/20 rounded-full blur-3xl"></div>
+            <div class="absolute -top-20 -left-20 w-48 h-48 md:w-64 md:h-64 bg-black/10 rounded-full blur-3xl"></div>
+        </div>
+    </section>
+
+    <div class="w-full flex justify-center py-16 md:py-20 px-6">
+        <a href="contact.html" class="w-full sm:w-auto group relative inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 font-black text-white uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs md:text-sm overflow-hidden rounded-full liquid-gradient shadow-[0_0_30px_rgba(255,87,1,0.3)] hover:shadow-[0_0_50px_rgba(255,87,1,0.5)] transition-all duration-300 hover:scale-105" style="font-family:'Epilogue',sans-serif;">
+            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
+            <span class="relative flex items-center gap-3 whitespace-nowrap">
+                Book Consultation <span class="material-symbols-outlined text-xl">arrow_forward</span>
+            </span>
+        </a>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="w-full bg-[#1b1b1b] pt-16 pb-10 px-6 md:px-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+            <div class="text-xl font-black text-[#FF5701] tracking-tighter mb-1 cursor-pointer leading-none" onclick="window.location.href='index.html'" style="font-family:'Epilogue',sans-serif;">
+                DYNAMO<br><span class="text-white/70 text-xs font-bold tracking-[0.25em] uppercase" style="font-family:'Manrope',sans-serif;">STUDIO</span>
+            </div>
+            <p class="text-white/50 text-sm mt-4 leading-relaxed">"We Bring Your Dream Events to Life, Flawlessly."<br><br>Indore's premier wedding planning &amp; event management studio since 2012. 850+ events across Central India.</p>
+            <p class="text-white/30 text-xs mt-4 italic">⚠️ Demo website — for demonstration purposes only.</p>
+        </div>
+        <div>
+            <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Quick Links</h4>
+            <div class="flex flex-col gap-3">
+                <a href="index.html" class="text-white/50 hover:text-primary transition-colors text-sm">Home</a>
+                <a href="portfolio.html" class="text-white/50 hover:text-primary transition-colors text-sm">Portfolio</a>
+                <a href="services.html" class="text-white/50 hover:text-primary transition-colors text-sm">Services</a>
+                <a href="contact.html" class="text-white/50 hover:text-primary transition-colors text-sm">Contact Us</a>
+            </div>
+        </div>
+        <div>
+            <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Contact</h4>
+            <div class="flex flex-col gap-3 text-sm text-white/50">
+                <div class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span>
+                    <span>42, Block C, Vijay Nagar,<br>Indore, Madhya Pradesh 452010</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">call</span>
+                    <a href="tel:+918103756862" class="hover:text-primary transition-colors">+91-8103756862 (Ravi)</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">schedule</span>
+                    <span>Mon–Sun: 10:00 AM – 9:30 PM</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">place</span>
+                    <span>Indore · Bhopal · Ujjain · Pune &amp; more</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full max-w-7xl mx-auto border-t border-white/5 pt-8 text-center px-4">
+        <span class="text-white/30 text-[10px] md:text-xs font-bold tracking-widest uppercase block break-words">© 2026 DYNAMO STUDIO EVENT MANAGEMENT, INDORE. ALL RIGHTS RESERVED.</span>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/918103756862" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp"
+   style="position:fixed;bottom:28px;right:28px;z-index:999;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);transition:transform 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<script>
+    // ── MENU TOGGLE ──────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuOpenBtn  = document.getElementById('menu-open');
+        const menuCloseBtn = document.getElementById('menu-close');
+        const sideMenu     = document.getElementById('side-menu');
+        menuOpenBtn.addEventListener('click', () => sideMenu.classList.remove('translate-x-full'));
+        menuCloseBtn.addEventListener('click', () => sideMenu.classList.add('translate-x-full'));
+        sideMenu.addEventListener('click', e => { if (e.target === sideMenu) sideMenu.classList.add('translate-x-full'); });
+
+        // ── PORTFOLIO FILTER ─────────────────────────────
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.classList.add('text-white/60');
+                    b.classList.remove('text-white');
+                });
+                btn.classList.add('active');
+                btn.classList.remove('text-white/60');
+
+                const filter = btn.dataset.filter;
+                items.forEach((item, i) => {
+                    const cat = item.dataset.cat;
+                    const match = filter === 'all' || cat === filter;
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(16px)';
+                    setTimeout(() => {
+                        if (match) {
+                            item.style.display = 'block';
+                            requestAnimationFrame(() => {
+                                item.style.transition = 'opacity .4s ease, transform .4s ease';
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            });
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }, i * 40);
+                });
+            });
+        });
+
+        // ── SCROLL FADE-IN ───────────────────────────────
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.portfolio-card, .stat-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity .6s ease, transform .6s ease';
+            observer.observe(el);
+        });
+    });
+</script>
+
+</body>
+</html>

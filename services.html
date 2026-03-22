@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Services | Dynamo Studio — Wedding & Event Management Indore</title>
+    <meta name="description" content="Explore Dynamo Studio's full range of services — luxury wedding planning, floral decor, sangeet choreography, drone photography, corporate events, celebrity management and more in Indore since 2012."/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700;900&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error":"#ffb4ab","on-primary-container":"#501600","on-tertiary-container":"#3d2400",
+              "tertiary-fixed":"#ffddb6","surface-container-highest":"#353535","surface-variant":"#353535",
+              "tertiary-container":"#c68315","on-secondary":"#5a1b00","surface":"#131313",
+              "surface-container-high":"#2a2a2a","surface-container-lowest":"#0e0e0e",
+              "primary-fixed":"#ffdbcf","error-container":"#93000a","inverse-surface":"#e5e2e1",
+              "surface-container":"#20201f","primary":"#ffb59b","inverse-primary":"#aa3700",
+              "on-tertiary-fixed-variant":"#643f00","surface-container-low":"#1b1b1b",
+              "on-tertiary-fixed":"#2a1800","secondary":"#ffb59a","surface-bright":"#393939",
+              "on-secondary-container":"#ffab8b","secondary-container":"#8b2f00","on-error":"#690005",
+              "on-secondary-fixed-variant":"#802a00","surface-tint":"#ffb59b","background":"#131313",
+              "surface-dim":"#131313","secondary-fixed-dim":"#ffb59a","on-secondary-fixed":"#370d00",
+              "on-background":"#e5e2e1","tertiary":"#ffb95a","on-error-container":"#ffdad6",
+              "primary-fixed-dim":"#ffb59b","on-primary-fixed-variant":"#822800","on-primary-fixed":"#380d00",
+              "primary-container":"#ff5701","on-surface-variant":"#e5beb2","on-tertiary":"#462a00",
+              "outline":"#ab897e","inverse-on-surface":"#313030","secondary-fixed":"#ffdbce",
+              "on-surface":"#e5e2e1","outline-variant":"#5b4037","tertiary-fixed-dim":"#ffb95a","on-primary":"#5c1a00"
+            },
+            fontFamily: { "headline":["Epilogue"], "body":["Manrope"], "label":["Manrope"] },
+            borderRadius: {"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        * { font-family: 'Manrope', sans-serif; }
+        h1,h2,h3,h4,h5,h6,.font-headline { font-family: 'Epilogue', sans-serif; }
+        .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+        body { background-color:#131313; color:#e5e2e1; overflow-x:hidden; }
+        .glass-card { background:rgba(53,53,53,0.4); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
+        .glass-dark { background:rgba(27,27,27,0.55); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
+        .liquid-gradient { background:linear-gradient(135deg,#ffb59b 0%,#ff5701 100%); }
+        .text-gradient { background:linear-gradient(135deg,#ffb59b 0%,#ff5701 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+        ::-webkit-scrollbar { width:8px; }
+        ::-webkit-scrollbar-track { background:#131313; }
+        ::-webkit-scrollbar-thumb { background:#353535; border-radius:10px; }
+        ::-webkit-scrollbar-thumb:hover { background:#ff5701; }
+        .demo-banner { background:linear-gradient(135deg,#ff5701 0%,#ffb59b 100%); color:#380d00; text-align:center; padding:8px 16px; font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+        .service-card { transition:transform .35s ease, box-shadow .35s ease; }
+        .service-card:hover { transform:translateY(-6px); box-shadow:0 24px 60px rgba(255,87,1,0.12); }
+        .img-cover { transition:transform .7s ease; }
+        .img-wrap:hover .img-cover { transform:scale(1.06); }
+        @keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+        .scroll-reveal { opacity:0; transform:translateY(28px); transition:opacity .65s ease, transform .65s ease; }
+        .scroll-reveal.visible { opacity:1; transform:translateY(0); }
+        .tag-pill { display:inline-flex; align-items:center; padding:4px 14px; border-radius:9999px; background:rgba(255,181,155,0.08); border:1px solid rgba(255,181,155,0.18); font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#ffb59b; }
+        .process-line { position:relative; }
+        .process-line::before { content:''; position:absolute; left:23px; top:56px; bottom:-32px; width:1px; background:linear-gradient(to bottom,rgba(255,87,1,0.4),transparent); }
+        .process-line:last-child::before { display:none; }
+        .accordion-body { max-height:0; overflow:hidden; transition:max-height .4s ease; }
+        .accordion-body.open { max-height:400px; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">⚠️ This is a Demo Website — For Demonstration Purposes Only, Showcasing Our Skills &amp; Expertise</div>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="fixed left-0 right-0 z-40 flex justify-between items-center px-6 md:px-8 py-4 w-full max-w-7xl mx-auto md:rounded-xl md:mt-6 bg-[#131313]/85 backdrop-blur-xl shadow-[0_40px_40px_-10px_rgba(0,0,0,0.15)] border-b border-white/5 md:border-none transition-all duration-300" style="top:36px;">
+    <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+        <div class="text-xl font-black text-[#FF5701] tracking-tighter leading-none" style="font-family:'Epilogue',sans-serif;">
+            DYNAMO<br><span class="text-white/80 text-xs font-bold tracking-[0.25em] uppercase" style="font-family:'Manrope',sans-serif;">STUDIO</span>
+        </div>
+    </div>
+    <nav class="hidden md:flex items-center gap-10 tracking-tight uppercase" style="font-family:'Epilogue',sans-serif;">
+        <a class="text-white/70 hover:text-white transition-colors font-bold" href="index.html">Home</a>
+        <a class="text-white/70 hover:text-white transition-colors font-bold" href="portfolio.html">Portfolio</a>
+        <a class="text-[#FF5701] font-bold border-b-2 border-[#FF5701] pb-1" href="services.html">Services</a>
+        <a class="text-white/70 hover:text-white transition-colors font-bold" href="contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+        <button onclick="window.location.href='contact.html'" class="hidden md:block liquid-gradient text-on-primary-fixed px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 active:scale-95 transition-transform duration-200">
+            Get Started
+        </button>
+        <button id="menu-open" class="md:hidden text-primary p-2 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="side-menu" class="fixed top-0 right-0 h-full w-full sm:w-1/3 bg-[#131313]/95 backdrop-blur-2xl z-50 transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-2xl border-l border-white/10 flex flex-col p-10 text-center sm:text-left">
+    <div class="flex justify-end mb-16">
+        <button id="menu-close" class="text-white/70 hover:text-[#FF5701] transition-colors focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+    </div>
+    <nav class="flex flex-col items-center sm:items-start gap-10 text-3xl font-black uppercase tracking-tighter" style="font-family:'Epilogue',sans-serif;">
+        <a class="text-white hover:text-[#FF5701] hover:translate-x-2 transition-all" href="index.html">Home</a>
+        <a class="text-white hover:text-[#FF5701] hover:translate-x-2 transition-all" href="portfolio.html">Portfolio</a>
+        <a class="text-[#FF5701] hover:translate-x-2 transition-transform" href="services.html">Services</a>
+        <a class="text-white hover:text-[#FF5701] hover:translate-x-2 transition-all" href="contact.html">Contact</a>
+    </nav>
+    <div class="mt-auto pt-10 border-t border-white/10">
+        <button onclick="window.location.href='contact.html'" class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm transition-all">Book Now</button>
+    </div>
+</div>
+
+<!-- ══════════════ MAIN ══════════════ -->
+<main style="padding-top:calc(36px + 7rem);">
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section class="max-w-7xl mx-auto px-6 md:px-8 mb-20 md:mb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-highest/30 backdrop-blur-md border border-outline-variant/15">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                <span class="text-xs font-bold tracking-[0.2em] uppercase text-on-surface-variant">Indore's Premier Event Studio · Since 2012</span>
+            </div>
+            <h1 class="font-headline text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-[1.05] md:leading-[0.9] break-words w-full" style="font-family:'Epilogue',sans-serif;">
+                EVERY <br class="hidden lg:block"/>
+                <span class="text-gradient">SERVICE.</span><br class="hidden lg:block"/>
+                ONE TEAM.
+            </h1>
+            <p class="font-body text-base md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                From your first consultation call to the last song at your reception — Dynamo Studio's in-house experts handle every detail with flawless professionalism, custom creativity, and zero stress for you.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-2 w-full sm:w-auto justify-center lg:justify-start">
+                <a href="contact.html" class="px-8 py-4 liquid-gradient text-on-primary-fixed rounded-full font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform text-center">Book Consultation</a>
+                <a href="portfolio.html" class="px-8 py-4 glass-card border border-outline-variant/20 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-surface-container transition-colors text-center">View Portfolio</a>
+            </div>
+        </div>
+        <div class="lg:col-span-5 relative w-full max-w-md mx-auto lg:max-w-full mt-8 lg:mt-0">
+            <div class="aspect-square rounded-[2rem] md:rounded-3xl overflow-hidden glass-card relative z-10 p-2 border border-outline-variant/10 img-wrap">
+                <img class="w-full h-full object-cover rounded-xl md:rounded-2xl img-cover" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1400&auto=format&fit=crop" alt="Dynamo Studio luxury event production Indore" width="1400" height="1400" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1400&auto=format&fit=crop'"/>
+            </div>
+            <div class="absolute -top-10 -right-10 w-48 h-48 md:w-64 md:h-64 liquid-gradient rounded-full blur-[80px] md:blur-[100px] opacity-20 -z-0 pointer-events-none"></div>
+            <!-- Floating badge -->
+            <div class="absolute -bottom-5 -left-5 glass-dark border border-white/10 rounded-2xl px-5 py-4 hidden sm:block z-20 shadow-xl">
+                <div class="text-3xl font-black text-primary" style="font-family:'Epilogue',sans-serif;">850+</div>
+                <div class="text-[10px] font-bold uppercase tracking-widest text-white/60 mt-1">Events Since 2012</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── QUICK SERVICE PILLS ───────────────────────────── -->
+    <section class="max-w-7xl mx-auto px-6 md:px-8 mb-24 scroll-reveal">
+        <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+            <span class="tag-pill">Luxury Wedding Planning</span>
+            <span class="tag-pill">Floral Decoration</span>
+            <span class="tag-pill">Sangeet Choreography</span>
+            <span class="tag-pill">Premium Catering</span>
+            <span class="tag-pill">Drone Photography</span>
+            <span class="tag-pill">Cinematic Grand Entry</span>
+            <span class="tag-pill">Live Band &amp; DJ</span>
+            <span class="tag-pill">Corporate Events</span>
+            <span class="tag-pill">Celebrity Management</span>
+            <span class="tag-pill">Venue Booking</span>
+            <span class="tag-pill">Digital Invitations</span>
+            <span class="tag-pill">Day-of Coordination</span>
+        </div>
+    </section>
+
+    <!-- ── CORE SERVICES GRID ───────────────────────────── -->
+    <section class="max-w-7xl mx-auto px-6 md:px-8 mb-24 md:mb-32">
+        <div class="text-center md:text-left mb-12">
+            <p class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">What We Do</p>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tighter" style="font-family:'Epilogue',sans-serif;">OUR CORE SERVICES</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+            <!-- SERVICE 1 – Luxury Wedding (large) -->
+            <div class="md:col-span-8 glass-card rounded-[2rem] p-8 md:p-12 group hover:bg-surface-container transition-all duration-500 overflow-hidden relative border border-outline-variant/10 text-center md:text-left flex flex-col items-center md:items-start service-card scroll-reveal">
+                <div class="absolute top-0 right-0 w-2/5 h-full opacity-5 group-hover:opacity-15 transition-opacity duration-700 pointer-events-none img-wrap overflow-hidden">
+                    <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop" alt="wedding background" width="800" height="1000" loading="lazy"/>
+                </div>
+                <div class="relative z-10 h-full flex flex-col justify-between items-center md:items-start w-full gap-8">
+                    <div class="space-y-4 flex flex-col items-center md:items-start">
+                        <div class="w-14 h-14 rounded-2xl liquid-gradient flex items-center justify-center shadow-lg">
+                            <span class="material-symbols-outlined text-on-primary-fixed text-3xl">celebration</span>
+                        </div>
+                        <h3 class="font-headline text-3xl md:text-4xl font-bold tracking-tight" style="font-family:'Epilogue',sans-serif;">Luxury Wedding Planning</h3>
+                        <p class="font-body text-sm md:text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                            Our flagship service — full-service or partial wedding planning tailored to your vision. From the first consultation to the last dance, Dynamo Studio crafts a wedding that reflects your unique story with cultural precision and modern elegance.
+                        </p>
+                    </div>
+                    <div class="w-full">
+                        <ul class="flex flex-wrap justify-center md:justify-start gap-3">
+                            <li class="tag-pill">Full Planning</li>
+                            <li class="tag-pill">Partial Planning</li>
+                            <li class="tag-pill">Day-of Coordination</li>
+                            <li class="tag-pill">Consultation</li>
+                            <li class="tag-pill">Booking All Services</li>
+                        </ul>
+                        <a href="contact.html" class="inline-flex items-center gap-2 mt-6 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+                            Plan Your Wedding <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 2 – Floral Decoration -->
+            <div class="md:col-span-4 bg-surface-container-low rounded-[2rem] overflow-hidden flex flex-col border border-outline-variant/10 service-card scroll-reveal img-wrap">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1478146059778-26a9218e35f7?q=80&w=800&auto=format&fit=crop" alt="Elite floral decoration Dynamo Studio" width="800" height="500" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800&auto=format&fit=crop'"/>
+                </div>
+                <div class="p-8 flex flex-col items-center md:items-start text-center md:text-left gap-4 flex-1">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 border border-primary/25 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-2xl">local_florist</span>
+                    </div>
+                    <h3 class="font-headline text-xl md:text-2xl font-bold uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Floral &amp; Thematic Decor</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Bespoke floral installations, entrance arches, mandap décor, table arrangements, and full thematic setups crafted by our elite in-house decorators.
+                    </p>
+                    <a href="contact.html" class="text-primary font-bold text-xs uppercase tracking-widest hover:opacity-70 transition-opacity mt-auto flex items-center gap-2">
+                        Get Quote <span class="material-symbols-outlined text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SERVICE 3 – Sangeet & Choreography -->
+            <div class="md:col-span-4 bg-surface-container-low rounded-[2rem] overflow-hidden flex flex-col border border-outline-variant/10 service-card scroll-reveal img-wrap">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800&auto=format&fit=crop" alt="Sangeet choreography Dynamo Studio" width="800" height="500" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=800&auto=format&fit=crop'"/>
+                </div>
+                <div class="p-8 flex flex-col items-center md:items-start text-center md:text-left gap-4 flex-1">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 border border-primary/25 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-2xl">music_note</span>
+                    </div>
+                    <h3 class="font-headline text-xl md:text-2xl font-bold uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Sangeet Choreography</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Professional choreographers who craft unforgettable sangeet performances — from family group dances to solo acts — with stage lighting and live music coordination.
+                    </p>
+                    <a href="contact.html" class="text-primary font-bold text-xs uppercase tracking-widest hover:opacity-70 transition-opacity mt-auto flex items-center gap-2">
+                        Get Quote <span class="material-symbols-outlined text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SERVICE 4 – Live Music & DJ -->
+            <div class="md:col-span-4 bg-primary-container rounded-[2rem] overflow-hidden flex flex-col border border-outline-variant/10 service-card scroll-reveal img-wrap">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover img-cover opacity-60" src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?q=80&w=800&auto=format&fit=crop" alt="Live band DJ Dynamo Studio" width="800" height="500" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1429514513361-8fa32282fd5f?q=80&w=800&auto=format&fit=crop'"/>
+                </div>
+                <div class="p-8 flex flex-col items-center md:items-start text-center md:text-left gap-4 flex-1">
+                    <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-on-primary-fixed text-2xl">headphones</span>
+                    </div>
+                    <h3 class="font-headline text-xl md:text-2xl font-bold uppercase tracking-tight text-on-primary-fixed" style="font-family:'Epilogue',sans-serif;">Live Band &amp; DJ Music</h3>
+                    <p class="font-body text-sm text-on-primary-fixed/75 leading-relaxed">
+                        Professional DJ setups, live band bookings, and international/celebrity artist management for electrifying entertainment at weddings, parties, and corporate events.
+                    </p>
+                    <a href="contact.html" class="text-on-primary-fixed font-bold text-xs uppercase tracking-widest hover:opacity-70 transition-opacity mt-auto flex items-center gap-2">
+                        Book Artist <span class="material-symbols-outlined text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SERVICE 5 – Photography & Drone -->
+            <div class="md:col-span-4 bg-surface-container-low rounded-[2rem] overflow-hidden flex flex-col border border-outline-variant/10 service-card scroll-reveal img-wrap">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=800&auto=format&fit=crop" alt="Cinematic drone photography Dynamo Studio" width="800" height="500" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=800&auto=format&fit=crop'"/>
+                </div>
+                <div class="p-8 flex flex-col items-center md:items-start text-center md:text-left gap-4 flex-1">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 border border-primary/25 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-2xl">photo_camera</span>
+                    </div>
+                    <h3 class="font-headline text-xl md:text-2xl font-bold uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Cinematic Photography</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Professional event photographers and videographers, including aerial drone coverage, cinematic reels, and same-day highlight edits for your special moments.
+                    </p>
+                    <a href="contact.html" class="text-primary font-bold text-xs uppercase tracking-widest hover:opacity-70 transition-opacity mt-auto flex items-center gap-2">
+                        Get Quote <span class="material-symbols-outlined text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SERVICE 6 – Premium Catering -->
+            <div class="md:col-span-4 bg-surface-container-low rounded-[2rem] overflow-hidden flex flex-col border border-outline-variant/10 service-card scroll-reveal img-wrap">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="Premium catering Dynamo Studio" width="800" height="500" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=800&auto=format&fit=crop'"/>
+                </div>
+                <div class="p-8 flex flex-col items-center md:items-start text-center md:text-left gap-4 flex-1">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 border border-primary/25 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-2xl">restaurant</span>
+                    </div>
+                    <h3 class="font-headline text-xl md:text-2xl font-bold uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Premium Catering</h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Curated menus from traditional Indian cuisine to modern fusion, served with premium hospitality. Our catering partners deliver restaurant-quality experiences at scale.
+                    </p>
+                    <a href="contact.html" class="text-primary font-bold text-xs uppercase tracking-widest hover:opacity-70 transition-opacity mt-auto flex items-center gap-2">
+                        Get Quote <span class="material-symbols-outlined text-sm">north_east</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SERVICE 7 – Venue Booking (wide) -->
+            <div class="md:col-span-8 glass-card rounded-[2rem] p-8 md:p-12 group hover:bg-surface-container transition-all duration-500 relative overflow-hidden border border-outline-variant/10 flex flex-col md:flex-row items-center gap-8 service-card scroll-reveal">
+                <div class="flex-1 space-y-5 flex flex-col items-center md:items-start text-center md:text-left">
+                    <div class="w-14 h-14 rounded-2xl liquid-gradient flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-on-primary-fixed text-3xl">location_city</span>
+                    </div>
+                    <h3 class="font-headline text-2xl md:text-3xl font-bold tracking-tight" style="font-family:'Epilogue',sans-serif;">Luxury Venue Booking</h3>
+                    <p class="font-body text-sm md:text-base text-on-surface-variant max-w-md leading-relaxed">
+                        Access to Indore's finest banquet halls, outdoor lawns, palace venues, and premium hotel ballrooms. We negotiate the best rates and manage all venue logistics end-to-end.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                        <li class="tag-pill list-none">Indoor Venues</li>
+                        <li class="tag-pill list-none">Outdoor Lawns</li>
+                        <li class="tag-pill list-none">Destination Weddings</li>
+                        <li class="tag-pill list-none">Hotel Ballrooms</li>
+                    </div>
+                    <a href="contact.html" class="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+                        Find a Venue <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="w-full md:w-56 h-48 md:h-56 rounded-2xl overflow-hidden flex-shrink-0 img-wrap">
+                    <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=600&auto=format&fit=crop" alt="Luxury venue booking Dynamo Studio" width="600" height="600" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600&auto=format&fit=crop'"/>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── OTHER SERVICES ACCORDION ─────────────────────── -->
+    <section class="max-w-7xl mx-auto px-6 md:px-8 mb-24 md:mb-32 scroll-reveal">
+        <div class="text-center md:text-left mb-10">
+            <p class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">More Services</p>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tighter" style="font-family:'Epilogue',sans-serif;">WE ALSO HANDLE</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <!-- Accordion Item -->
+            <div class="accordion-item bg-surface-container-low rounded-2xl border border-outline-variant/10 overflow-hidden service-card">
+                <button class="accordion-toggle w-full flex items-center justify-between p-6 md:p-8 text-left gap-4" onclick="toggleAccordion(this)">
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-primary text-2xl">corporate_fare</span>
+                        <span class="font-black text-lg uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Corporate &amp; Conference Events</span>
+                    </div>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-300 accordion-icon">expand_more</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="px-6 md:px-8 pb-8">
+                        <div class="h-40 rounded-xl overflow-hidden mb-5 img-wrap">
+                            <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=900&auto=format&fit=crop" alt="Corporate conference Dynamo Studio" width="900" height="360" loading="lazy"/>
+                        </div>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Full-service corporate event management — from annual general meetings and product launches to team offsites and award nights. We handle venue, AV, catering, logistics, and attendee management.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-surface-container-low rounded-2xl border border-outline-variant/10 overflow-hidden service-card">
+                <button class="accordion-toggle w-full flex items-center justify-between p-6 md:p-8 text-left gap-4" onclick="toggleAccordion(this)">
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-primary text-2xl">cake</span>
+                        <span class="font-black text-lg uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Birthday Party Planning</span>
+                    </div>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-300 accordion-icon">expand_more</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="px-6 md:px-8 pb-8">
+                        <div class="h-40 rounded-xl overflow-hidden mb-5 img-wrap">
+                            <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=900&auto=format&fit=crop" alt="Birthday celebration Dynamo Studio" width="900" height="360" loading="lazy"/>
+                        </div>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Memorable milestone birthdays — from children's themed parties to lavish adult celebrations. Custom décor, entertainment, cake setups, return gifts, and complete party management.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-surface-container-low rounded-2xl border border-outline-variant/10 overflow-hidden service-card">
+                <button class="accordion-toggle w-full flex items-center justify-between p-6 md:p-8 text-left gap-4" onclick="toggleAccordion(this)">
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-primary text-2xl">favorite</span>
+                        <span class="font-black text-lg uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Anniversary &amp; Baby Shower</span>
+                    </div>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-300 accordion-icon">expand_more</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="px-6 md:px-8 pb-8">
+                        <div class="h-40 rounded-xl overflow-hidden mb-5 img-wrap">
+                            <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1470753937643-efeb931202a9?q=80&w=900&auto=format&fit=crop" alt="Anniversary Dynamo Studio" width="900" height="360" loading="lazy"/>
+                        </div>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Beautiful anniversary celebrations and baby showers with bespoke balloon décor, floral setups, customized invitations, catering, and photography — every detail thoughtfully arranged.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-surface-container-low rounded-2xl border border-outline-variant/10 overflow-hidden service-card">
+                <button class="accordion-toggle w-full flex items-center justify-between p-6 md:p-8 text-left gap-4" onclick="toggleAccordion(this)">
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-primary text-2xl">star</span>
+                        <span class="font-black text-lg uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Celebrity &amp; Artist Management</span>
+                    </div>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-300 accordion-icon">expand_more</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="px-6 md:px-8 pb-8">
+                        <div class="h-40 rounded-xl overflow-hidden mb-5 img-wrap">
+                            <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1429514513361-8fa32282fd5f?q=80&w=900&auto=format&fit=crop" alt="Celebrity management Dynamo Studio" width="900" height="360" loading="lazy"/>
+                        </div>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">We manage international and national artist bookings, celebrity appearances, and live performances. Contracts, logistics, hospitality, and stage management — all handled by our expert team.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-surface-container-low rounded-2xl border border-outline-variant/10 overflow-hidden service-card">
+                <button class="accordion-toggle w-full flex items-center justify-between p-6 md:p-8 text-left gap-4" onclick="toggleAccordion(this)">
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-primary text-2xl">school</span>
+                        <span class="font-black text-lg uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">College &amp; School Events</span>
+                    </div>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-300 accordion-icon">expand_more</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="px-6 md:px-8 pb-8">
+                        <div class="h-40 rounded-xl overflow-hidden mb-5 img-wrap">
+                            <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=900&auto=format&fit=crop" alt="College event Dynamo Studio" width="900" height="360" loading="lazy"/>
+                        </div>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Fests, cultural nights, farewell parties, sports days, and annual functions for colleges and schools — managed with energy, creativity, and complete professionalism.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-surface-container-low rounded-2xl border border-outline-variant/10 overflow-hidden service-card">
+                <button class="accordion-toggle w-full flex items-center justify-between p-6 md:p-8 text-left gap-4" onclick="toggleAccordion(this)">
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-primary text-2xl">mark_email_read</span>
+                        <span class="font-black text-lg uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Digital &amp; Print Invitations</span>
+                    </div>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-300 accordion-icon">expand_more</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="px-6 md:px-8 pb-8">
+                        <p class="text-on-surface-variant text-sm leading-relaxed mt-2">Custom-designed digital invitations (WhatsApp-ready, animated) and premium print invitation suites — including save-the-dates, RSVP cards, and gift registry cards. All with branded design coordination.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── PROCESS SECTION ─────────────────────────────── -->
+    <section class="max-w-7xl mx-auto px-6 md:px-8 mt-8 mb-24 md:mb-32">
+        <div class="bg-surface-container-low rounded-[2rem] md:rounded-[3rem] p-8 sm:p-10 md:p-16 relative overflow-hidden border border-outline-variant/10">
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20">
+
+                <!-- Left: Process Steps -->
+                <div class="space-y-8 flex flex-col items-center md:items-start">
+                    <div class="text-center md:text-left">
+                        <p class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">How We Work</p>
+                        <h2 class="font-headline text-4xl md:text-5xl font-black tracking-tighter uppercase leading-tight" style="font-family:'Epilogue',sans-serif;">
+                            The Dynamo <span class="text-primary italic">Process</span>
+                        </h2>
+                    </div>
+                    <div class="space-y-0 w-full">
+                        <div class="process-line flex gap-6 pb-10 items-start">
+                            <div class="w-12 h-12 rounded-xl liquid-gradient flex items-center justify-center shrink-0 shadow-lg">
+                                <span class="font-black text-on-primary-fixed text-sm" style="font-family:'Epilogue',sans-serif;">I</span>
+                            </div>
+                            <div class="pt-1">
+                                <h4 class="font-headline text-lg md:text-xl font-bold mb-2" style="font-family:'Epilogue',sans-serif;">Discovery &amp; Vision Call</h4>
+                                <p class="text-on-surface-variant leading-relaxed text-sm md:text-base">We begin with a detailed conversation — understanding your event type, guest count, budget, cultural preferences, and dream vision. No templates. No assumptions.</p>
+                            </div>
+                        </div>
+                        <div class="process-line flex gap-6 pb-10 items-start">
+                            <div class="w-12 h-12 rounded-xl liquid-gradient flex items-center justify-center shrink-0 shadow-lg">
+                                <span class="font-black text-on-primary-fixed text-sm" style="font-family:'Epilogue',sans-serif;">II</span>
+                            </div>
+                            <div class="pt-1">
+                                <h4 class="font-headline text-lg md:text-xl font-bold mb-2" style="font-family:'Epilogue',sans-serif;">Custom Design Proposal</h4>
+                                <p class="text-on-surface-variant leading-relaxed text-sm md:text-base">Our team creates a fully bespoke proposal — thematic concepts, vendor lineup, venue recommendations, décor moodboard, and a transparent fee structure for your approval.</p>
+                            </div>
+                        </div>
+                        <div class="process-line flex gap-6 pb-10 items-start">
+                            <div class="w-12 h-12 rounded-xl liquid-gradient flex items-center justify-center shrink-0 shadow-lg">
+                                <span class="font-black text-on-primary-fixed text-sm" style="font-family:'Epilogue',sans-serif;">III</span>
+                            </div>
+                            <div class="pt-1">
+                                <h4 class="font-headline text-lg md:text-xl font-bold mb-2" style="font-family:'Epilogue',sans-serif;">Booking &amp; Planning</h4>
+                                <p class="text-on-surface-variant leading-relaxed text-sm md:text-base">Once confirmed, we lock in all vendors, manage payments, and handle the detailed planning timeline — keeping you informed and stress-free every step of the way.</p>
+                            </div>
+                        </div>
+                        <div class="process-line flex gap-6 items-start">
+                            <div class="w-12 h-12 rounded-xl liquid-gradient flex items-center justify-center shrink-0 shadow-lg">
+                                <span class="font-black text-on-primary-fixed text-sm" style="font-family:'Epilogue',sans-serif;">IV</span>
+                            </div>
+                            <div class="pt-1">
+                                <h4 class="font-headline text-lg md:text-xl font-bold mb-2" style="font-family:'Epilogue',sans-serif;">Flawless Day-of Execution</h4>
+                                <p class="text-on-surface-variant leading-relaxed text-sm md:text-base">Our on-ground team manages every logistic, every transition, every vendor on the actual event day — so you celebrate freely without worrying about a single detail.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: CTA Card + Image -->
+                <div class="flex flex-col justify-between gap-8">
+                    <div class="rounded-2xl overflow-hidden img-wrap h-56 md:h-72">
+                        <img class="w-full h-full object-cover img-cover" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=900&auto=format&fit=crop" alt="Dynamo Studio event execution" width="900" height="576" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=900&auto=format&fit=crop'"/>
+                    </div>
+                    <div class="glass-card p-8 md:p-10 rounded-2xl border border-white/10 space-y-5 w-full text-center md:text-left">
+                        <h4 class="font-headline text-2xl font-bold text-white uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Ready to Plan?</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Our team is available 7 days a week, 10AM–9:30PM. Reach Ravi directly at <strong class="text-primary">+91-8103756862</strong> or submit an inquiry below.</p>
+                        <div class="flex flex-col gap-3">
+                            <div onclick="window.location.href='contact.html'" class="p-4 bg-surface-container rounded-xl flex items-center justify-between group cursor-pointer hover:bg-primary/15 border border-transparent hover:border-primary/30 transition-all">
+                                <span class="font-bold text-sm">Contact Dynamo Studio</span>
+                                <span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                            </div>
+                            <div onclick="window.location.href='portfolio.html'" class="p-4 bg-surface-container rounded-xl flex items-center justify-between group cursor-pointer hover:bg-primary/15 border border-transparent hover:border-primary/30 transition-all">
+                                <span class="font-bold text-sm">View Our Work</span>
+                                <span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">visibility</span>
+                            </div>
+                            <a href="https://wa.me/918103756862" target="_blank" class="p-4 rounded-xl flex items-center justify-between group border border-[#25D366]/30 hover:bg-[#25D366]/10 transition-all cursor-pointer">
+                                <span class="font-bold text-sm text-[#25D366]">Chat on WhatsApp</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 right-0 w-64 h-64 md:w-96 md:h-96 liquid-gradient opacity-[0.04] blur-[120px] pointer-events-none"></div>
+        </div>
+    </section>
+
+    <!-- ── PLANNING TYPES ─────────────────────────────── -->
+    <section class="max-w-7xl mx-auto px-6 md:px-8 mb-24 md:mb-32 scroll-reveal">
+        <div class="text-center mb-12">
+            <p class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-3">Planning Options</p>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tighter" style="font-family:'Epilogue',sans-serif;">CHOOSE YOUR PLAN</h2>
+            <p class="text-on-surface-variant text-sm md:text-base max-w-xl mx-auto mt-4 leading-relaxed">Whether you need full management or just expert day-of support — we have a planning format that fits.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="glass-card border border-outline-variant/10 rounded-2xl p-8 service-card text-center flex flex-col items-center gap-4">
+                <div class="w-14 h-14 rounded-full liquid-gradient flex items-center justify-center">
+                    <span class="material-symbols-outlined text-on-primary-fixed text-2xl">event_available</span>
+                </div>
+                <h3 class="font-black text-xl uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Full Wedding Planning</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">Complete end-to-end management — from venue scouting and vendor coordination to decor, catering, and day-of execution. You relax, we handle everything.</p>
+                <a href="contact.html" class="mt-auto px-6 py-3 liquid-gradient text-on-primary-fixed rounded-full font-bold text-xs uppercase tracking-widest hover:scale-105 transition-transform">Book This</a>
+            </div>
+
+            <div class="glass-card border border-outline-variant/10 rounded-2xl p-8 service-card text-center flex flex-col items-center gap-4">
+                <div class="w-14 h-14 rounded-full bg-surface-container-high border border-outline-variant/20 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-2xl">edit_calendar</span>
+                </div>
+                <h3 class="font-black text-xl uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Partial Planning</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">Already have some vendors locked in? We step in to fill the gaps, coordinate your existing bookings, and add our expertise where you need it most.</p>
+                <a href="contact.html" class="mt-auto px-6 py-3 border border-outline-variant/30 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-surface-container transition-colors">Book This</a>
+            </div>
+
+            <div class="glass-card border border-outline-variant/10 rounded-2xl p-8 service-card text-center flex flex-col items-center gap-4">
+                <div class="w-14 h-14 rounded-full bg-surface-container-high border border-outline-variant/20 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-2xl">support_agent</span>
+                </div>
+                <h3 class="font-black text-xl uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Day-of Coordination</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">You've planned everything — now let us execute it flawlessly. Our team arrives on your event day to manage all vendors, timelines, and logistics so you enjoy every moment.</p>
+                <a href="contact.html" class="mt-auto px-6 py-3 border border-outline-variant/30 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-surface-container transition-colors">Book This</a>
+            </div>
+
+            <div class="glass-card border border-outline-variant/10 rounded-2xl p-8 service-card text-center flex flex-col items-center gap-4">
+                <div class="w-14 h-14 rounded-full bg-surface-container-high border border-outline-variant/20 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-2xl">record_voice_over</span>
+                </div>
+                <h3 class="font-black text-xl uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Consultation</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">Not sure where to start? Book a one-on-one consultation with Ravi and our planning team to get expert advice, vendor recommendations, and budget guidance.</p>
+                <a href="contact.html" class="mt-auto px-6 py-3 border border-outline-variant/30 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-surface-container transition-colors">Book This</a>
+            </div>
+
+            <div class="glass-card border border-outline-variant/10 rounded-2xl p-8 service-card text-center flex flex-col items-center gap-4 sm:col-span-2 lg:col-span-2">
+                <div class="w-14 h-14 rounded-full bg-primary-container/20 border border-primary/25 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-2xl">inventory_2</span>
+                </div>
+                <h3 class="font-black text-xl uppercase tracking-tight" style="font-family:'Epilogue',sans-serif;">Booking All Services</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed max-w-md">Choose this if you want to book Dynamo Studio for every aspect — photography, décor, catering, live music, choreography, venue, and full coordination — as a single bundled service with one point of contact.</p>
+                <div class="flex flex-col sm:flex-row gap-3 mt-auto">
+                    <a href="contact.html" class="px-6 py-3 liquid-gradient text-on-primary-fixed rounded-full font-bold text-xs uppercase tracking-widest hover:scale-105 transition-transform">Get Custom Quote</a>
+                    <a href="https://wa.me/918103756862" target="_blank" class="px-6 py-3 border border-[#25D366]/40 text-[#25D366] rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#25D366]/10 transition-colors text-center">Chat on WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── ABOUT STRIP ──────────────────────────────────── -->
+    <section class="max-w-4xl mx-auto px-6 md:px-8 mb-20 md:mb-28 text-center scroll-reveal">
+        <div class="glass-card border border-outline-variant/10 rounded-2xl p-8 md:p-14">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4 block">emoji_events</span>
+            <h2 class="font-headline text-xl md:text-2xl font-bold mb-5 text-on-surface" style="font-family:'Epilogue',sans-serif;">Indore's Most Trusted Event Management Studio</h2>
+            <p class="text-on-surface-variant leading-relaxed text-sm md:text-base opacity-80 max-w-2xl mx-auto">
+                Dynamo Studio has been delivering flawless events since 2012 — with an in-house team of elite decorators, experienced coordinators, professional photographers, and certified choreographers. Based in Vijay Nagar, Indore, we serve clients across Bhopal, Ujjain, Pune, and beyond. Our fees are structured as per the event — transparent, competitive, and tailored to your budget. Speak to <strong class="text-primary">Ravi at +91-8103756862</strong> for a free consultation today.
+            </p>
+        </div>
+    </section>
+
+    <!-- ── FINAL CTA ─────────────────────────────────────── -->
+    <div class="max-w-7xl mx-auto px-4 md:px-8 mb-10">
+        <div class="rounded-[2rem] md:rounded-[3rem] liquid-gradient p-10 md:p-20 relative overflow-hidden text-center shadow-2xl">
+            <div class="absolute inset-0 bg-black/10 backdrop-blur-[2px]"></div>
+            <div class="relative z-10 flex flex-col items-center">
+                <h2 class="font-headline text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter text-on-primary-fixed mb-6 leading-none break-words w-full" style="font-family:'Epilogue',sans-serif;">LET'S BUILD<br class="hidden md:block"/> YOUR EVENT.</h2>
+                <p class="text-on-primary-fixed/80 text-base md:text-xl max-w-xl mx-auto mb-10 font-medium px-2 md:px-0">
+                    850+ events delivered. 12+ years of excellence. 100% client satisfaction.<br>Your dream event is one call away.
+                </p>
+                <button onclick="window.location.href='contact.html'" class="w-full sm:w-auto px-12 py-5 bg-surface text-on-surface rounded-full font-black uppercase tracking-[0.15em] text-sm hover:scale-105 transition-transform shadow-2xl">
+                    Start Planning Today
+                </button>
+            </div>
+            <div class="absolute -bottom-20 -right-20 w-64 h-64 md:w-80 md:h-80 bg-white/20 rounded-full blur-3xl"></div>
+            <div class="absolute -top-20 -left-20 w-48 h-48 md:w-64 md:h-64 bg-black/10 rounded-full blur-3xl"></div>
+        </div>
+    </div>
+
+    <div class="w-full flex justify-center mt-6 pb-20 px-6">
+        <a href="contact.html" class="w-full sm:w-auto group relative inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 font-black text-white uppercase tracking-[0.15em] md:tracking-[0.2em] text-xs md:text-sm overflow-hidden rounded-full liquid-gradient shadow-[0_0_30px_rgba(255,87,1,0.3)] hover:shadow-[0_0_50px_rgba(255,87,1,0.5)] transition-all duration-300 hover:scale-105" style="font-family:'Epilogue',sans-serif;">
+            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
+            <span class="relative flex items-center gap-3 whitespace-nowrap">
+                Book Consultation <span class="material-symbols-outlined text-xl">arrow_forward</span>
+            </span>
+        </a>
+    </div>
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="w-full bg-[#1b1b1b] pt-16 pb-10 px-6 md:px-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+            <div class="text-xl font-black text-[#FF5701] tracking-tighter mb-1 cursor-pointer leading-none" onclick="window.location.href='index.html'" style="font-family:'Epilogue',sans-serif;">
+                DYNAMO<br><span class="text-white/70 text-xs font-bold tracking-[0.25em] uppercase">STUDIO</span>
+            </div>
+            <p class="text-white/50 text-sm mt-4 leading-relaxed">"We Bring Your Dream Events to Life, Flawlessly."<br><br>Indore's premier wedding planning &amp; event management studio since 2012. 850+ events across Central India.</p>
+            <p class="text-white/30 text-xs mt-4 italic">⚠️ Demo website — for demonstration purposes only.</p>
+        </div>
+        <div>
+            <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Quick Links</h4>
+            <div class="flex flex-col gap-3">
+                <a href="index.html" class="text-white/50 hover:text-primary transition-colors text-sm">Home</a>
+                <a href="portfolio.html" class="text-white/50 hover:text-primary transition-colors text-sm">Portfolio</a>
+                <a href="services.html" class="text-white/50 hover:text-primary transition-colors text-sm">Services</a>
+                <a href="contact.html" class="text-white/50 hover:text-primary transition-colors text-sm">Contact Us</a>
+            </div>
+        </div>
+        <div>
+            <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Contact</h4>
+            <div class="flex flex-col gap-3 text-sm text-white/50">
+                <div class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span>
+                    <span>42, Block C, Vijay Nagar,<br>Indore, Madhya Pradesh 452010</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">call</span>
+                    <a href="tel:+918103756862" class="hover:text-primary transition-colors">+91-8103756862 (Ravi)</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">schedule</span>
+                    <span>Mon–Sun: 10:00 AM – 9:30 PM</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">place</span>
+                    <span>Indore · Bhopal · Ujjain · Pune &amp; more</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full max-w-7xl mx-auto border-t border-white/5 pt-8 text-center px-4">
+        <span class="text-white/30 text-[10px] md:text-xs font-bold tracking-widest uppercase block break-words">© 2026 DYNAMO STUDIO EVENT MANAGEMENT, INDORE. ALL RIGHTS RESERVED.</span>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/918103756862" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp"
+   style="position:fixed;bottom:28px;right:28px;z-index:999;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);transition:transform .2s;"
+   onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<script>
+    // ── MENU ─────────────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuOpenBtn  = document.getElementById('menu-open');
+        const menuCloseBtn = document.getElementById('menu-close');
+        const sideMenu     = document.getElementById('side-menu');
+        menuOpenBtn.addEventListener('click', () => sideMenu.classList.remove('translate-x-full'));
+        menuCloseBtn.addEventListener('click', () => sideMenu.classList.add('translate-x-full'));
+        sideMenu.addEventListener('click', e => { if (e.target === sideMenu) sideMenu.classList.add('translate-x-full'); });
+
+        // ── SCROLL REVEAL ────────────────────────────────
+        const revealEls = document.querySelectorAll('.scroll-reveal, .service-card');
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.08 });
+        revealEls.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(24px)';
+            el.style.transition = 'opacity .6s ease, transform .6s ease';
+            revealObs.observe(el);
+        });
+
+        // ── IMAGE ERROR FALLBACK ─────────────────────────
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('error', function() {
+                const fallbacks = [
+                    'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop',
+                    'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop',
+                    'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=800&auto=format&fit=crop'
+                ];
+                const rand = fallbacks[Math.floor(Math.random() * fallbacks.length)];
+                if (this.src !== rand) this.src = rand;
+            });
+        });
+    });
+
+    // ── ACCORDION ────────────────────────────────────────
+    function toggleAccordion(btn) {
+        const body = btn.nextElementSibling;
+        const icon = btn.querySelector('.accordion-icon');
+        const isOpen = body.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+        document.querySelectorAll('.accordion-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+        // Open clicked if was closed
+        if (!isOpen) {
+            body.classList.add('open');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+</script>
+
+</body>
+</html>
